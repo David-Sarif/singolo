@@ -1,0 +1,88 @@
+body {
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #2d303a;
+  padding: 40px 40px 35px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  box-sizing: border-box;
+  border-bottom: #323746 6px solid;
+}
+
+header a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-size: 25px;
+  line-height: 6px;
+  font-weight: bold;
+  color: #f06c64;
+  margin-left: -3px;
+  display: inline-block;
+}
+
+.logo h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 6px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 371px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 12px;
+  line-height: 6px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.nav-active {
+  color: #bf5d5a;
+}
+nav li:hover,
+nav li:focus {
+  opacity: 0.4;
+}
+
+nav li:active {
+  opacity: 0;
+}
+
+nav li::before {
+  content: ".";
+  color: #494e62;
+  font-size: 12px;
+  line-height: 6px;
+  font-weight: 700;
+  position: relative;
+  left: -14px;
+  top: -2px;
+}
+
+nav li:first-child::before {
+  content: "";
+}
