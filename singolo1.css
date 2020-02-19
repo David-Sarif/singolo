@@ -86,3 +86,31 @@ nav li::before {
 nav li:first-child::before {
   content: "";
 }
+
+.slider-container {
+  position: relative;
+  height: 600px;
+  box-sizing: border-box;
+  padding-top: 53px;
+  padding-left: 111px;
+  background-color: #f06c64;
+  border-bottom: #ea676b 6px solid;
+  position: relative;
+}
+.button-left {
+  position: absolute;
+  top: 280px;
+  left: 36px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.button-right {
+  position: absolute;
+  top: 280px;
+  right: 34px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
