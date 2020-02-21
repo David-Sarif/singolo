@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-  width: 1020px;
+  /* width: 1020px; */
   margin: 0 auto;
 }
 header .wrapper {
@@ -12,7 +12,7 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 40px 35px 40px;
+  padding: 22px 0px 35px 0px;
   border: transparent 1px solid;
 }
 
@@ -33,6 +33,8 @@ header a {
 }
 .logo{
   padding-left:40px;
+  /* padding-right: 0px; */
+  /* margin-left: 0.5px; */
 }
 
 .logo span {
@@ -103,32 +105,71 @@ nav li:first-child::before {
   position: relative;
   height: 600px;
   box-sizing: border-box;
-  padding-top: 53px;
-  padding-left: 554px;
+
   background-color: #f06c64;
   border-bottom: #ea676b 6px solid;
   position: relative;
 }
+.slider-img{
+  /* margin: 0 5px 0 6px; */
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -1px;
+  margin-right: 0px;
+}
+.slider-container .wrapper{
+/* /* position: relative;
+
+padding: 0 40px; */
+display: flex;
+justify-content: space-between;
+align-content: center;
+padding-top: 53px;
+width: 960px;
+margin:0 auto;
+
+}
 .button-left {
-  position: absolute;
-  top: 280px;
-  left:479px;
+  /* position: absolute;
+  top: 230px;
+  left:-75px; */
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding:0;
+  /* margin-left:12px; */
+padding-left: 12px;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+  
 }
 .button-right {
-  position: absolute;
+  /* position: absolute;
   top: 280px;
-  right:476px;
+  right:190px; */
   background-color: transparent;
   border: none;
   cursor: pointer;
   transform: rotateY(180deg);
+  padding:0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  /* padding-top: 2px; */
+  margin-right: 10px;
+  /* width: 18px; */
+}
+.button-right img{
+  /* margin-right: 20px; */
+  /* padding-left: 0px; */
 }
 
 .services {
   background-color: #f2f2f2;
+}
+.services .wrapper{
+  width: 1020px;
 }
 
 .services h2 {
@@ -147,6 +188,7 @@ nav li:first-child::before {
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
+  
   font-weight: 300;
   padding-left: 41px;
   padding-top: 9px;
