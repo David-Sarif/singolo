@@ -3,8 +3,17 @@ body {
 }
 
 .wrapper {
-  width: 1020px;
   margin: 0 auto;
+}
+
+header .wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px 35px 0px;
+  border: transparent 1px solid;
 }
 
 a {
@@ -13,10 +22,6 @@ a {
 
 header {
   background-color: #2d303a;
-  padding: 40px 40px 35px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 95px;
   box-sizing: border-box;
   border-bottom: #323746 6px solid;
@@ -25,6 +30,9 @@ header {
 header a {
   color: white;
   text-transform: uppercase;
+}
+.logo{
+  padding-left:40px;
 }
 
 .logo span {
@@ -45,6 +53,10 @@ header a {
   letter-spacing: -0.5px;
 }
 
+nav{
+padding-right: 40px;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -63,6 +75,7 @@ nav a {
 .nav-active {
   color: #bf5d5a;
 }
+
 nav li:hover,
 nav li:focus {
   opacity: 0.4;
@@ -91,37 +104,61 @@ nav li:first-child::before {
   position: relative;
   height: 600px;
   box-sizing: border-box;
-  padding-top: 53px;
-  padding-left: 111px;
   background-color: #f06c64;
   border-bottom: #ea676b 6px solid;
   position: relative;
 }
+.slider-img{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -1px;
+  margin-right: 0px;
+}
+.slider-container .wrapper{
+display: flex;
+justify-content: space-between;
+align-content: center;
+padding-top: 53px;
+width: 960px;
+margin:0 auto;
+
+}
 .button-left {
-  position: absolute;
-  top: 280px;
-  left: 36px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding:0;
+
+padding-left: 12px;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+  
 }
 .button-right {
-  position: absolute;
-  top: 280px;
-  right: 34px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   transform: rotateY(180deg);
+  padding:0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 10px;
+ 
 }
+
 
 .services {
   background-color: #f2f2f2;
 }
+.services .wrapper{
+  width: 1020px;
+}
 
 .services h2 {
   margin: 0;
-  padding-left: 41px;
+  padding-left: 40px;
   padding-top: 68px;
   font-size: 30px;
   line-height: 18px;
@@ -134,7 +171,7 @@ nav li:first-child::before {
 .services p {
   font-size: 18px;
   line-height: 30px;
-  color: #767e9e;
+  color: #767e9e;  
   font-weight: 300;
   padding-left: 41px;
   padding-top: 9px;
@@ -153,11 +190,13 @@ nav li:first-child::before {
   padding-bottom: 57px;
   border-bottom: white 6px solid;
 }
+
 .services-item {
   margin-top: -38px;
   margin-bottom: -12px;
   margin-right: 16px;
 }
+
 .services-list img {
   position: relative;
   top: 66px;
@@ -181,7 +220,6 @@ nav li:first-child::before {
   padding-left: 80px;
   padding-top: 0px;
   margin-top: 9px;
-
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
@@ -189,4 +227,11 @@ nav li:first-child::before {
   letter-spacing: -0.1px;
   overflow: hidden;
   max-height: 66px;
+}
+
+/*? This is because original PSD is bit messed up */
+
+.services-item:nth-child(3) h3,
+.services-item:nth-child(6) h3{
+  padding-left: 82.5px;
 }
