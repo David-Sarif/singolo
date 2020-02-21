@@ -6,6 +6,15 @@ body {
   width: 1020px;
   margin: 0 auto;
 }
+header .wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px 35px 40px;
+  border: transparent 1px solid;
+}
 
 a {
   text-decoration: none;
@@ -13,10 +22,6 @@ a {
 
 header {
   background-color: #2d303a;
-  padding: 40px 40px 35px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 95px;
   box-sizing: border-box;
   border-bottom: #323746 6px solid;
@@ -25,6 +30,9 @@ header {
 header a {
   color: white;
   text-transform: uppercase;
+}
+.logo{
+  padding-left:40px;
 }
 
 .logo span {
@@ -43,6 +51,10 @@ header a {
   line-height: 6px;
   font-weight: bold;
   letter-spacing: -0.5px;
+}
+nav{
+padding-right: 40px;
+
 }
 
 nav ul {
@@ -92,7 +104,7 @@ nav li:first-child::before {
   height: 600px;
   box-sizing: border-box;
   padding-top: 53px;
-  padding-left: 111px;
+  padding-left: 554px;
   background-color: #f06c64;
   border-bottom: #ea676b 6px solid;
   position: relative;
@@ -100,7 +112,7 @@ nav li:first-child::before {
 .button-left {
   position: absolute;
   top: 280px;
-  left: 36px;
+  left:479px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -108,7 +120,7 @@ nav li:first-child::before {
 .button-right {
   position: absolute;
   top: 280px;
-  right: 34px;
+  right:476px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -121,7 +133,7 @@ nav li:first-child::before {
 
 .services h2 {
   margin: 0;
-  padding-left: 41px;
+  padding-left: 40px;
   padding-top: 68px;
   font-size: 30px;
   line-height: 18px;
@@ -190,3 +202,8 @@ nav li:first-child::before {
   overflow: hidden;
   max-height: 66px;
 }
+/*? This is because original PSD is bit messed up */
+.services-item:nth-child(3) h3,
+.services-item:nth-child(6) h3{
+  padding-left: 82.5px;
+
