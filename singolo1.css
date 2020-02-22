@@ -160,11 +160,13 @@ padding-left: 12px;
 .services {
   background-color: #f2f2f2;
   border-bottom: white 6px solid;
+  box-sizing: border-box;
 }
 
 
 .services-wrapper{
   width: 1020px;
+  height: 494px;
 }
 
 .services h2 {
@@ -197,7 +199,7 @@ padding-left: 12px;
   align-items: flex-start;
   padding-left: 40px;
   padding-right: 30px;
-  padding-bottom: 57px;
+  padding-bottom: 41px;
   
 }
 /* ? template is not so symmetrical, so I have to change elements width a bit */
