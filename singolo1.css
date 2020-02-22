@@ -32,6 +32,11 @@ header a {
   color: white;
   text-transform: uppercase;
 }
+header a:hover,
+header a:focus,
+header a:active{
+  color:#f06c64;
+}
 .logo{
   padding-left:40px;
 }
