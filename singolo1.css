@@ -115,7 +115,7 @@ nav li:first-child::before {
   position: relative;
 }
 .slider-img{
-  margin-left: -2px;
+  margin-left: 10px;
 }
 
 .slider-wrapper{
@@ -127,12 +127,18 @@ width: 960px;
 margin:0 auto;
 
 }
+.button-container{
+display: flex;
+align-items: center;
+padding-left: 12px; 
+
+}
 .button-left {
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding:0;
-  padding-left: 12px;   
+
 }
 
 .button-right {
@@ -141,10 +147,14 @@ margin:0 auto;
   cursor: pointer;
   transform: rotateY(180deg);
   padding:0px;
-  padding-left: 0px;
-  padding-right: 0px;
   margin-right: 10px;
  
+}
+
+.button-left:hover,
+.button-right:hover{
+  outline: lightpink 2px solid;
+  
 }
 
 .services {
