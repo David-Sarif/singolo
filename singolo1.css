@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 
-header .wrapper {
+.header-wrapper {
   max-width: 1020px;
   margin: 0 auto;
   display: flex;
@@ -113,7 +113,7 @@ nav li:first-child::before {
   margin-left: -2px;
 }
 
-.slider-container .wrapper{
+.slider-wrapper{
 display: flex;
 justify-content: space-between;
 align-content: center;
@@ -148,7 +148,7 @@ margin:0 auto;
 }
 
 
-.services .wrapper{
+.services-wrapper{
   width: 1020px;
 }
 
