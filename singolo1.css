@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", Arial, sans-serif;
+  min-width: 1020px;
 }
 
 .wrapper {
@@ -143,7 +144,9 @@ margin:0 auto;
 
 .services {
   background-color: #f2f2f2;
+  border-bottom: white 6px solid;
 }
+
 
 .services .wrapper{
   width: 1020px;
@@ -180,7 +183,7 @@ margin:0 auto;
   padding-left: 40px;
   padding-right: 30px;
   padding-bottom: 57px;
-  border-bottom: white 6px solid;
+  
 }
 /* ? template is not so symmetrical, so I have to change elements width a bit */
 .services-item {
