@@ -109,11 +109,9 @@ nav li:first-child::before {
   position: relative;
 }
 .slider-img{
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: -1px;
-  margin-right: 0px;
+  margin-left: -2px;
 }
+
 .slider-container .wrapper{
 display: flex;
 justify-content: space-between;
@@ -128,14 +126,9 @@ margin:0 auto;
   border: none;
   cursor: pointer;
   padding:0;
-
-padding-left: 12px;
-  padding-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  
-  
+  padding-left: 12px;   
 }
+
 .button-right {
   background-color: transparent;
   border: none;
@@ -148,10 +141,10 @@ padding-left: 12px;
  
 }
 
-
 .services {
   background-color: #f2f2f2;
 }
+
 .services .wrapper{
   width: 1020px;
 }
@@ -184,23 +177,29 @@ padding-left: 12px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0;
   padding-left: 40px;
   padding-right: 30px;
   padding-bottom: 57px;
   border-bottom: white 6px solid;
 }
-
+/* ? template is not so symmetrical, so I have to change elements width a bit */
 .services-item {
   margin-top: -38px;
   margin-bottom: -12px;
-  margin-right: 16px;
+  width: 312px;
+}
+.services-item:nth-child(3),
+.services-item:nth-child(6) {
+  width: 311px;
+}
+.services-item:nth-child(2),
+.services-item:nth-child(5){
+  width: 313px;
 }
 
 .services-list img {
   position: relative;
   top: 66px;
-  left: 0px;
   display: inline-block;
 }
 .services-list h3 {
