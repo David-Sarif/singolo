@@ -1,0 +1,104 @@
+body {
+  font-family: "Lato", Arial, sans-serif;
+  min-width: 1020px;
+  color: white;
+}
+
+.portfolio {
+  padding-top: 44px;
+  padding-left: 79px;
+  padding-bottom: 47px;
+  display: flex;
+  justify-content: center;
+  background-color: #2d303a;
+  border-bottom: #323746 6px solid;
+}
+.portfolio-wrapper {
+  width: 1020px;
+}
+
+.portfolio-wrapper h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.portfolio-wrapper p {
+  padding-top: 2px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+}
+
+.portfolio-filter {
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-left: 1px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  margin-bottom: 19px;
+ 
+}
+/* ? Changing elements width manually due to PixelPerfect */
+/*  */
+.filter-element:first-child a{
+width: 29px;
+}
+.filter-element:nth-child(2) a{
+width: 78px;
+}
+.filter-element:nth-child(3) a{
+width: 93px;
+}
+.filter-element:last-child a{
+width: 57px;
+}
+
+
+.filter-element a {
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 22px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 13px;
+  color: #767e9e;
+  font-weight: 400;
+  /* padding-left: 7px;
+  padding-right: 7px; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* letter-spacing: -0.1px; */
+  text-align: center;
+}
+.filter-element-active a{
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.portfolio-list{
+  margin: 0;
+  margin-left: -1px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  height: 621px;
+  width: 941px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.portfolio-element{
+  margin-bottom: 17px;
+}
