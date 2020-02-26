@@ -6,7 +6,7 @@ body {
 
 .portfolio {
   padding-top: 44px;
-  padding-left: 79px;
+
   padding-bottom: 47px;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@ body {
 }
 .portfolio-wrapper {
   width: 1020px;
+  padding-left: 79px;
 }
 
 .portfolio-wrapper h2 {
@@ -43,23 +44,22 @@ body {
   justify-content: space-between;
   width: 288px;
   margin-bottom: 19px;
- 
-}
-/* ? Changing elements width manually due to PixelPerfect */
-/*  */
-.filter-element:first-child a{
-width: 29px;
-}
-.filter-element:nth-child(2) a{
-width: 78px;
-}
-.filter-element:nth-child(3) a{
-width: 93px;
-}
-.filter-element:last-child a{
-width: 57px;
 }
 
+/* ? Changing elements width manually due to PixelPerfect */
+
+.filter-element:first-child a {
+  width: 29px;
+}
+.filter-element:nth-child(2) a {
+  width: 78px;
+}
+.filter-element:nth-child(3) a {
+  width: 93px;
+}
+.filter-element:last-child a {
+  width: 57px;
+}
 
 .filter-element a {
   border: 1px solid #767e9e;
@@ -72,20 +72,26 @@ width: 57px;
   line-height: 13px;
   color: #767e9e;
   font-weight: 400;
-  /* padding-left: 7px;
-  padding-right: 7px; */
   padding-top: 3px;
   padding-bottom: 3px;
-  /* letter-spacing: -0.1px; */
   text-align: center;
 }
-.filter-element-active a{
-    color:white;
-    border: 1px solid white;
-    border-radius: 5px;
+.filter-element-active a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-.portfolio-list{
+.filter-element a:hover{
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.filter-element a:active{
+  opacity: 0.3;
+}
+
+.portfolio-list {
   margin: 0;
   margin-left: -1px;
   list-style-type: none;
@@ -99,6 +105,124 @@ width: 57px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.portfolio-element{
+
+.portfolio-element {
   margin-bottom: 17px;
+}
+
+/* Section about us */
+
+.about-us {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  height: 734px;
+  box-sizing: border-box;
+  border-bottom:#ffffff 6px solid;
+
+}
+.about-us-wrapper {
+  width: 1020px;
+  padding-left: 79px;
+}
+
+.about-us-h {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  padding-top: 43px;
+  letter-spacing: -0.2px;
+}
+
+.about-us-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  padding-top: 2px;
+  width: 940px;
+}
+
+.us-people {
+  padding: 0;
+  padding-top: 27px;
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+}
+
+.people-element {
+  display: inline-block;
+  width: 302px;
+}
+/* ? pixel perfect  */
+.people-element:first-child {
+  margin-left: -1px;
+  margin-right: 5px;
+}
+
+.people-element:nth-child(2) {
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+.people-element:last-child {
+  margin-left: 4px;
+  margin-right: -2px;
+}
+
+.people-name {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  height: 18px;
+  width: 300px;
+  overflow: hidden;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+
+.people-descr {
+  width: 300px;
+  height: 60px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-weight: 400;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  letter-spacing: -0.1px;
+
+}
+
+/* ? Due to pixel perfect again */
+.people-name:nth-child(2),
+.people-descr:nth-child(2) {
+  margin-left: 1px;
+}
+
+.people-social-list {
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-left: 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 154px;
+  height: 34px;
+}
+/* ? Due to pixel perfect again. This template is not so symmetrical */
+.people-element:last-child .people-social-list {
+  margin-left: -2px;
+}
+
+.people-social-list li:hover,
+.people-social-list li:focus{
+  opacity: 0.6;
+}
+
+.people-social-list li:active{
+  opacity: 0.3;
 }
