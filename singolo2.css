@@ -15,7 +15,8 @@ body {
 }
 .portfolio-wrapper {
   width: 1020px;
-  padding-left: 79px;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
 .portfolio-wrapper h2 {
@@ -123,7 +124,8 @@ body {
 }
 .about-us-wrapper {
   width: 1020px;
-  padding-left: 79px;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
 .about-us-h {
@@ -154,23 +156,26 @@ body {
 
 .people-element {
   display: inline-block;
-  width: 302px;
+  width: 301px;
 }
 /* ? pixel perfect  */
 .people-element:first-child {
   margin-left: -1px;
-  margin-right: 5px;
+  margin-right: 0px;
+  width: 299px;
 }
 
 .people-element:nth-child(2) {
-  margin-left: 2px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 4px;
 }
 
 .people-element:last-child {
-  margin-left: 4px;
-  margin-right: -2px;
+  margin-left: 0px;
+  margin-right: -1px;
 }
+
+
 
 .people-name {
   font-size: 18px;
@@ -198,6 +203,7 @@ body {
 
 }
 
+
 /* ? Due to pixel perfect again */
 .people-name:nth-child(2),
 .people-descr:nth-child(2) {
@@ -214,6 +220,10 @@ body {
   height: 34px;
 }
 /* ? Due to pixel perfect again. This template is not so symmetrical */
+.people-element:last-child .people-name{
+margin-left: -1px;
+}
+
 .people-element:last-child .people-social-list {
   margin-left: -2px;
 }
