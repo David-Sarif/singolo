@@ -55,7 +55,7 @@ html {
 .contact-form input,textarea{
 
   width: 604px;
-  height: 36px;
+  height: 37px;
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
@@ -67,15 +67,17 @@ color: #f0d8d9;
 
 font-weight: 600;
 padding-left: 15px;
+padding-top: 0px;
 
 
 
 
 }
 textarea{
-  height: 198px;
+  height: 193px;
   resize: none;
   width: 602px;
+  padding-top: 7px;
 
   
 }
