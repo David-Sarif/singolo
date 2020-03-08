@@ -259,7 +259,7 @@ nav li:first-child::before {
 .portfolio {
     padding-top: 44px;
   
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     display: flex;
     justify-content: center;
     background-color: #2d303a;
@@ -355,7 +355,7 @@ nav li:first-child::before {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    height: 621px;
+    height: 620px;
     width: 941px;
     overflow: hidden;
     -moz-overflow:hidden
@@ -570,11 +570,21 @@ nav li:first-child::before {
   }
   
   .contact-form input::placeholder,
-  textarea::placeholder {
+  textarea::placeholder{
+
     color: #f48c8f;
     font-size: 12px;
     line-height: 20px;
   }
+  .contact-form input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #f48c8f;
+    font-size: 12px;
+    line-height: 36px;
+    padding-top: 5px;
+
+  }
+
   
   input.button-submit {
     margin-bottom: 0;
@@ -676,7 +686,6 @@ nav li:first-child::before {
     justify-content: space-between;
     width: 154px;
     height: 34px;
-  
   }
   
   .footer-social li:hover,
