@@ -1,0 +1,694 @@
+body {
+  font-family: "Lato", Arial, sans-serif;
+  min-width: 1020px;
+}
+
+/* singolo1 */
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px 35px 0px;
+  border: transparent 1px solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #2d303a;
+  height: 95px;
+  box-sizing: border-box;
+  border-bottom: #323746 6px solid;
+}
+
+header a {
+  color: white;
+  text-transform: uppercase;
+}
+header a:hover,
+header a:focus,
+header a:active {
+  color: #f06c64;
+}
+.logo {
+  padding-left: 40px;
+}
+
+.logo span {
+  font-size: 25px;
+  line-height: 6px;
+  font-weight: bold;
+  color: #f06c64;
+  margin-left: -3px;
+  display: inline-block;
+}
+
+.logo h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 6px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+nav {
+  padding-right: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 371px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 12px;
+  line-height: 6px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.nav-active {
+  color: #bf5d5a;
+}
+
+nav li:hover,
+nav li:focus {
+  opacity: 0.4;
+}
+
+nav li:active {
+  opacity: 0;
+}
+
+nav li::before {
+  content: ".";
+  color: #494e62;
+  font-size: 12px;
+  line-height: 6px;
+  font-weight: 700;
+  position: relative;
+  left: -14px;
+  top: -2px;
+}
+
+nav li:first-child::before {
+  content: "";
+}
+
+.slider-container {
+  position: relative;
+  height: 600px;
+  box-sizing: border-box;
+  background-color: #f06c64;
+  border-bottom: #ea676b 6px solid;
+  position: relative;
+}
+.slider-img {
+  margin-left: 10px;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 53px;
+  width: 960px;
+  margin: 0 auto;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+.button-left {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button-right {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.button-left:hover,
+.button-right:hover {
+  outline: lightpink 2px solid;
+}
+
+.services {
+  background-color: #f2f2f2;
+  border-bottom: white 6px solid;
+  box-sizing: border-box;
+}
+
+.services-wrapper {
+  width: 1020px;
+  height: 494px;
+}
+
+.services h2 {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 68px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: -0.2px;
+}
+
+.services p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  width: 939px;
+  padding-left: 41px;
+  padding-top: 9px;
+  letter-spacing: 0.1px;
+  text-align: justify;
+}
+
+.services-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 41px;
+}
+/* ? template is not so symmetrical, so I have to change elements width a bit */
+.services-item {
+  margin-top: -38px;
+  margin-bottom: -12px;
+  width: 312px;
+}
+.services-item:nth-child(3),
+.services-item:nth-child(6) {
+  width: 311px;
+}
+.services-item:nth-child(2),
+.services-item:nth-child(5) {
+  width: 313px;
+}
+
+.services-list img {
+  position: relative;
+  top: 66px;
+  display: inline-block;
+}
+.services-list h3 {
+  margin: 0;
+  padding-left: 80px;
+  padding-top: 1px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  letter-spacing: -0.1px;
+}
+
+.services-list p {
+  display: inline-block;
+  width: 215px;
+  padding-left: 80px;
+  padding-top: 0px;
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 66px;
+}
+
+/*? This is because original PSD is bit messed up */
+
+.services-item:nth-child(3) h3,
+.services-item:nth-child(6) h3 {
+  padding-left: 82.5px;
+}
+
+/* singolo2 */
+
+.portfolio {
+    padding-top: 44px;
+  
+    padding-bottom: 47px;
+    display: flex;
+    justify-content: center;
+    background-color: #2d303a;
+    border-bottom: #323746 6px solid;
+  }
+  .portfolio-wrapper {
+    width: 1020px;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+  
+  .portfolio-wrapper h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    /* margin: 24px 0; */
+  }
+  
+  .portfolio-wrapper p {
+    padding-top: 2px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+  }
+  
+  .portfolio-filter {
+    margin: 0;
+    padding: 0;
+    padding-top: 11px;
+    padding-left: 1px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 288px;
+    margin-bottom: 19px;
+  }
+  
+  /* ? Changing elements width manually due to PixelPerfect */
+  
+  .filter-element:first-child a {
+    width: 29px;
+  }
+  .filter-element:nth-child(2) a {
+    width: 78px;
+  }
+  .filter-element:nth-child(3) a {
+    width: 93px;
+  }
+  .filter-element:last-child a {
+    width: 57px;
+  }
+  
+  .filter-element a {
+    border: 1px solid #767e9e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 22px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 13px;
+    color: #767e9e;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
+  .filter-element-active a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .filter-element a:hover{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .filter-element a:active{
+    opacity: 0.3;
+  }
+  
+  .portfolio-list {
+    margin: 0;
+    margin-left: -1px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    height: 621px;
+    width: 941px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .portfolio-element {
+    margin-bottom: 17px;
+  }
+  
+  /* Section about us */
+  
+  .about-us {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    height: 734px;
+    box-sizing: border-box;
+    border-bottom:#ffffff 6px solid;
+  
+  }
+  .about-us-wrapper {
+    width: 1020px;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+  
+  .about-us-h {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    padding-top: 43px;
+    letter-spacing: -0.2px;
+  }
+  
+  .about-us-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    padding-top: 2px;
+    width: 940px;
+    text-align: justify;
+  }
+  
+  .us-people {
+    padding: 0;
+    padding-top: 27px;
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+  }
+  
+  .people-element {
+    display: inline-block;
+    width: 301px;
+  }
+  /* ? pixel perfect  */
+  .people-element:first-child {
+    margin-left: -1px;
+    margin-right: 0px;
+    width: 299px;
+  }
+  
+  .people-element:nth-child(2) {
+    margin-left: 3px;
+    margin-right: 4px;
+  }
+  
+  .people-element:last-child {
+    margin-left: 0px;
+    margin-right: -1px;
+  }
+  
+  
+  
+  .people-name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    height: 18px;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 14px;
+    margin-bottom: 0px;
+  }
+  
+  .people-descr {
+    width: 300px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-weight: 400;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: -0.2px;
+    text-align: justify;
+  
+  }
+  
+  
+  /* ? Due to pixel perfect again */
+  .people-name:nth-child(2),
+  .people-descr:nth-child(2) {
+    margin-left: 1px;
+  }
+  
+  .people-social-list {
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-left: 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+    height: 34px;
+    list-style-type: none;
+  }
+  /* ? Due to pixel perfect again. This template is not so symmetrical */
+  .people-element:last-child .people-name{
+  margin-left: -1px;
+  }
+  
+  .people-element:last-child .people-social-list {
+    margin-left: -2px;
+  }
+  
+  .people-social-list li:hover,
+  .people-social-list li:focus{
+    opacity: 0.6;
+  }
+  
+  .people-social-list li:active{
+    opacity: 0.3;
+  }
+  
+
+/* singolo3 */
+.feedback {
+    background-color: #f06c64;
+    display: flex;
+    justify-content: center;
+    border-bottom: #ea676b 6px solid;
+    height: 648px;
+  }
+  
+  .feedback-wrapper {
+    /* min-width: 1020px; */
+    width: 1020px;
+    margin-left: 80px;
+    padding-top: 43px;
+    /* margin-right: 38px; */
+  }
+  
+  .feedback-heading {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+  }
+  .feedback-descr {
+    width: 939px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-weight: 300;
+    overflow: hidden;
+    margin-top: 27px;
+    letter-spacing: 0px;
+    text-align: justify;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-right: 80px;
+  }
+  
+  .contacts-descr {
+    width: 301px;
+  }
+  
+  .contact-form input,
+  textarea {
+    width: 604px;
+    height: 37px;
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #f0d8d9;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-top: 0px;
+    line-height: 38px;
+  }
+  
+  textarea {
+    height: 193px;
+    resize: none;
+    width: 602px;
+    padding-top: 7px;
+  }
+  
+  .contact-form input::placeholder,
+  textarea::placeholder {
+    color: #f48c8f;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  input.button-submit {
+    margin-bottom: 0;
+    height: 40px;
+    width: 620px;
+    cursor: pointer;
+  }
+  
+  input.button-submit:hover{
+    opacity: 0.8;
+  }
+  
+  input.button-submit:active{
+    opacity: 0.4;
+  }
+  
+  .contacts-heading {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+  }
+  
+  .contacts-descr {
+    width: 300px;
+    height: 96px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: -0.2px;
+    margin-top: 10px;
+  }
+  
+  .contacts-address-wrapper,
+  .contacts-phone-wrapper,
+  .contacts-mail-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .contacts-address-wrapper img {
+    margin-right: 13px;
+    margin-left: 3px;
+    margin-top: 0px;
+  }
+  
+  .contacts-phone-wrapper img {
+    margin-right: 11px;
+    margin-left: 1px;
+    margin-top: 0px;
+  }
+  
+  .contacts-mail-wrapper img {
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 6x;
+    margin-bottom: -4px;
+  }
+  
+  .contacts-address-wrapper p,
+  .contacts-phone-wrapper p,
+  .contacts-mail-wrapper p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: -1px;
+  }
+  
+  .contacts-mail-wrapper p {
+    margin-top: 1px;
+  }
+  footer{
+    display:flex;
+    justify-content: center;
+    background-color: #2d303a;
+    height: 76px;
+  
+  }
+  
+  .footer-wrapper{
+    width: 1020px;
+    display: flex;
+    justify-content: space-between;
+  
+  
+  }
+  .footer-social{
+    list-style-type: none;
+    display: flex;
+    padding-top: 5px;
+    padding-right: 39px;
+    justify-content: space-between;
+    width: 154px;
+    height: 34px;
+  
+  }
+  
+  .footer-social li:hover,
+  .footer-social li:focus{
+    opacity: 0.6;
+  }
+  .footer-social li:active{
+    opacity: 0.2;
+  }
+  
+  .footer-copyright{
+  font-size: 12px;
+  line-height: 22px;
+  color: #666d89;
+  font-weight: 400;
+  margin-top: 27px;
+  margin-left: 42px;
+  }
+  
+  
