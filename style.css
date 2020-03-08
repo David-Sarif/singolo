@@ -359,8 +359,6 @@ nav li:first-child::before {
     width: 941px;
     overflow: hidden;
     -moz-overflow:hidden
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
   }
   
   .portfolio-element {
@@ -509,11 +507,9 @@ nav li:first-child::before {
   }
   
   .feedback-wrapper {
-    /* min-width: 1020px; */
     width: 1020px;
     margin-left: 80px;
     padding-top: 43px;
-    /* margin-right: 38px; */
   }
   
   .feedback-heading {
