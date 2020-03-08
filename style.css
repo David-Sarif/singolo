@@ -314,7 +314,7 @@ nav li:first-child::before {
     width: 93px;
   }
   .filter-element:last-child a {
-    width: 57px;
+    width: 58px;
   }
   
   .filter-element a {
@@ -658,6 +658,15 @@ nav li:first-child::before {
     text-align: left;
     margin-top: 0;
     margin-bottom: -1px;
+  }
+  .contacts-mail-wrapper:hover,
+  .contacts-phone-wrapper:hover{
+    opacity: 0.6;
+  }
+
+  .contacts-mail-wrapper:active,
+  .contacts-phone-wrapper:active{
+    opacity: 0.2;
   }
   
   .contacts-mail-wrapper p {
