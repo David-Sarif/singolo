@@ -259,7 +259,7 @@ nav li:first-child::before {
 .portfolio {
     padding-top: 44px;
   
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     display: flex;
     justify-content: center;
     background-color: #2d303a;
@@ -314,7 +314,7 @@ nav li:first-child::before {
     width: 93px;
   }
   .filter-element:last-child a {
-    width: 57px;
+    width: 58px;
   }
   
   .filter-element a {
@@ -355,12 +355,10 @@ nav li:first-child::before {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    height: 621px;
+    height: 620px;
     width: 941px;
     overflow: hidden;
     -moz-overflow:hidden
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
   }
   
   .portfolio-element {
@@ -509,11 +507,9 @@ nav li:first-child::before {
   }
   
   .feedback-wrapper {
-    /* min-width: 1020px; */
     width: 1020px;
     margin-left: 80px;
     padding-top: 43px;
-    /* margin-right: 38px; */
   }
   
   .feedback-heading {
@@ -570,11 +566,21 @@ nav li:first-child::before {
   }
   
   .contact-form input::placeholder,
-  textarea::placeholder {
+  textarea::placeholder{
+
     color: #f48c8f;
     font-size: 12px;
     line-height: 20px;
   }
+  .contact-form input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #f48c8f;
+    font-size: 12px;
+    line-height: 36px;
+    padding-top: 5px;
+
+  }
+
   
   input.button-submit {
     margin-bottom: 0;
@@ -649,6 +655,15 @@ nav li:first-child::before {
     margin-top: 0;
     margin-bottom: -1px;
   }
+  .contacts-mail-wrapper:hover,
+  .contacts-phone-wrapper:hover{
+    opacity: 0.6;
+  }
+
+  .contacts-mail-wrapper:active,
+  .contacts-phone-wrapper:active{
+    opacity: 0.2;
+  }
   
   .contacts-mail-wrapper p {
     margin-top: 1px;
@@ -676,7 +691,6 @@ nav li:first-child::before {
     justify-content: space-between;
     width: 154px;
     height: 34px;
-  
   }
   
   .footer-social li:hover,
