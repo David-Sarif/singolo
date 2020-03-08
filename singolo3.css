@@ -84,9 +84,18 @@ textarea::placeholder {
 }
 
 input.button-submit {
-  visibility: hidden;
   margin-bottom: 0;
-  height: 0;
+  height: 40px;
+  width: 620px;
+  cursor: pointer;
+}
+
+input.button-submit:hover{
+  opacity: 0.8;
+}
+
+input.button-submit:active{
+  opacity: 0.4;
 }
 
 .contacts-heading {
@@ -103,9 +112,7 @@ input.button-submit {
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-
   font-weight: 400;
-
   text-align: justify;
   letter-spacing: -0.2px;
   margin-top: 10px;
@@ -144,7 +151,6 @@ input.button-submit {
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-
   font-weight: 400;
   text-align: left;
   margin-top: 0;
@@ -154,3 +160,46 @@ input.button-submit {
 .contacts-mail-wrapper p {
   margin-top: 1px;
 }
+footer{
+  display:flex;
+  justify-content: center;
+  background-color: #2d303a;
+  height: 76px;
+
+}
+
+.footer-wrapper{
+  width: 1020px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.footer-social{
+  list-style-type: none;
+  display: flex;
+  padding-top: 5px;
+  padding-right: 78px;
+  justify-content: space-between;
+  width: 154px;
+  height: 34px;
+
+}
+
+.footer-social li:hover,
+.footer-social li:focus{
+  opacity: 0.6;
+}
+.footer-social li:active{
+  opacity: 0.2;
+}
+
+.footer-copyright{
+font-size: 12px;
+line-height: 22px;
+color: #666d89;
+font-weight: 400;
+margin-top: 27px;
+margin-left: 3px;
+}
+
