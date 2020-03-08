@@ -182,9 +182,11 @@ nav li:first-child::before {
   line-height: 30px;
   color: #767e9e;
   font-weight: 300;
+  width: 939px;
   padding-left: 41px;
   padding-top: 9px;
   letter-spacing: 0.1px;
+  text-align: justify;
 }
 
 .services-list {
@@ -239,6 +241,7 @@ nav li:first-child::before {
   color: #767e9e;
   font-weight: 400;
   letter-spacing: -0.1px;
+  text-align: justify;
   overflow: hidden;
   max-height: 66px;
 }
@@ -395,6 +398,7 @@ nav li:first-child::before {
     font-weight: 300;
     padding-top: 2px;
     width: 940px;
+    text-align: justify;
   }
   
   .us-people {
@@ -450,7 +454,8 @@ nav li:first-child::before {
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 0px;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.2px;
+    text-align: justify;
   
   }
   
@@ -496,7 +501,7 @@ nav li:first-child::before {
     display: flex;
     justify-content: center;
     border-bottom: #ea676b 6px solid;
-    height: 668px;
+    height: 648px;
   }
   
   .feedback-wrapper {
@@ -662,7 +667,7 @@ nav li:first-child::before {
     list-style-type: none;
     display: flex;
     padding-top: 5px;
-    padding-right: 78px;
+    padding-right: 39px;
     justify-content: space-between;
     width: 154px;
     height: 34px;
@@ -683,7 +688,7 @@ nav li:first-child::before {
   color: #666d89;
   font-weight: 400;
   margin-top: 27px;
-  margin-left: 3px;
+  margin-left: 42px;
   }
   
   
