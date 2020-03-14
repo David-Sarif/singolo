@@ -31,13 +31,10 @@ header {
   border-bottom: #323746 6px solid;
   position:sticky;
   top:0;
+  z-index:1;
   /* margin: auto auto 50px auto; */
 }
-.header-back{
-  position: relative;
-  height: 95px;
-  z-index: -1;
-}
+
 
 header a {
   color: white;
@@ -124,15 +121,31 @@ nav li:first-child::before {
   position: relative;
   height: 600px;
   box-sizing: border-box;
-  background-color: #f06c64;
-  border-bottom: #ea676b 6px solid;
+
+
   position: relative;
-  z-index: -1;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.slider-container-red{
+  background-color: #f06c64;
+  border-bottom: #ea676b 6px solid;
+}
+.slider-container-blue{
+  background-color: #648BF0;
+  border-bottom: rgb(76, 121, 236) 6px solid;
+}
+
+.arrow{
+  opacity: 0.3;
+}
+
 .slider-img {
   margin-left: 10px;
+  position: relative;
+  width: 798px;
+  height: 486px;
 }
 
 .slider-wrapper {
@@ -142,6 +155,18 @@ nav li:first-child::before {
   padding-top: 53px;
   width: 960px;
   margin: 0 auto;
+}
+.phone-vertical{
+  position: absolute;
+  top: 0px;
+  left: 0px
+}
+
+.phone-horizontal{
+  position: absolute;
+  top:121px;
+  left:313px;
+
 }
 .button-container {
   display: flex;
@@ -175,7 +200,7 @@ nav li:first-child::before {
   border-bottom: white 6px solid;
   box-sizing: border-box;
   position: relative;
-  z-index: -1;
+
 }
 
 .services-wrapper {
@@ -394,7 +419,11 @@ nav li:first-child::before {
   .portfolio-element {
     margin-bottom: 17px;
   }
-  
+  .portfolio-img{
+    box-sizing:border-box;
+    width: 220px;
+    height: 187px;
+  }
   .portfolio-element .portfolio-img:focus{
   border: #F06C64 solid 5px;
   }
@@ -747,4 +776,30 @@ nav li:first-child::before {
   margin-left: 42px;
   }
   
-  
+  .black-screen-vertical{
+    width: 192px;
+    height: 337px;
+    position: absolute;
+    background-color: black;
+    top: 62px;
+    left: 12px;
+  }
+
+  .black-screen-horizontal{
+    width: 337px;
+    height: 192px;
+    position: absolute;
+    background-color: black;
+    top: 133px;
+    left: 371px;
+  }
+
+.slide-2-img{
+  position: absolute;
+  top: calc(50% - 260px);
+  left:calc(50% - 260px);
+}
+
+  .visually-hidden{
+    display:none;
+  }

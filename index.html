@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./style.css">
-    
+
     <title>Singolo</title>
 </head>
 
 <body>
-    <!-- <div class="header-back"></div> -->
     <header id='home'>
         <div class="wrapper header-wrapper">
             <a href="#" class="logo">
@@ -33,26 +32,37 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
 
-        <section class="slider-container">
+        <section class="slider-container slider-container-red" id='slider-container'>
             <div class="wrapper slider-wrapper">
                 <div class="button-container">
-                    <button type='button' class="button button-left"><img src="./assets/img/chev.png" class='arrow-left'
-                            alt="arrow-left"></button>
+                    <button type='button' class="button button-left"><img src="./assets/img/chev.png" class='arrow arrow_left'
+                            alt="arrow-left" id='arrow-left'></button>
                 </div>
-                <div class="slider-img">
-                    <img src="./assets/img/iPhone-Vertical.png" alt="phones"></div>
+                <div class="slider-img " id='slide-1'>
+                    <img src="./assets/img/Phone-Vertical.png" class='phone-vertical' id='phone-vertical'
+                        alt="phone-vertical">
+                    <img src="./assets/img/phone-horizontal.png" class='phone-horizontal' id='phone-horizontal'
+                        alt="phone-horizontal">
+
+                    <div class="black-screen-vertical visually-hidden" id='black-screen-vertical'></div>
+                    <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal' ></div>
+                </div>
+                <div class="slider-img visually-hidden" id='slide-2'>
+                    <img src="./assets/img/slide2.png" class='slide-2-img' alt="slide2">
+                </div>
+
                 <div class="button-container">
                     <button type='button' class="button button-right"><img src="./assets/img/chev.png"
-                            class='arrow-left' alt="arrow-left"></button>
+                            class='arrow arrow_right' alt="arrow-right" id='arrow-right'></button>
                 </div>
 
             </div>
         </section>
         <div class="services-anchor" id='services'></div>
-        <section class="services" >
+        <section class="services">
             <div class="wrapper services-wrapper">
 
 
@@ -136,7 +146,7 @@
                     <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-6.png"
                                 alt="portfolio-6" class='portfolio-img' tabindex='0'></a></li>
                     <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-7.png"
-                                alt="portfolio-7" class='portfolio-img' tabindex='0' ></a></li>
+                                alt="portfolio-7" class='portfolio-img' tabindex='0'></a></li>
                     <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-8.png"
                                 alt="portfolio-8" class='portfolio-img' tabindex='0'></a></li>
                     <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-9.png"
@@ -214,7 +224,7 @@
                     cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="contact-wrapper">
                     <form action="https://echo.htmlacademy.ru" method="post" class='contact-form'>
-                        <input type="text" id="contact-name" name="contact-name" placeholder="Name (Required)" required >
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Name (Required)" required>
                         <br>
 
                         <input type="email" id="contact-email" name="contact-email" placeholder="Email (Required)"
@@ -272,4 +282,5 @@
 </body>
 
 <script src="/script.js"></script>
+
 </html>
