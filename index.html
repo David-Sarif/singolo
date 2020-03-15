@@ -38,8 +38,8 @@
         <section class="slider-container slider-container-red" id='slider-container'>
             <div class="wrapper slider-wrapper">
                 <div class="button-container">
-                    <button type='button' class="button button-left"><img src="./assets/img/chev.png" class='arrow arrow_left'
-                            alt="arrow-left" id='arrow-left'></button>
+                    <button type='button' class="button button-left"><img src="./assets/img/chev.png"
+                            class='arrow arrow_left' alt="arrow-left" id='arrow-left'></button>
                 </div>
                 <div class="slider-img " id='slide-1'>
                     <img src="./assets/img/Phone-Vertical.png" class='phone-vertical' id='phone-vertical'
@@ -48,7 +48,7 @@
                         alt="phone-horizontal">
 
                     <div class="black-screen-vertical visually-hidden" id='black-screen-vertical'></div>
-                    <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal' ></div>
+                    <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal'></div>
                 </div>
                 <div class="slider-img visually-hidden" id='slide-2'>
                     <img src="./assets/img/slide2.png" class='slide-2-img' alt="slide2">
@@ -223,7 +223,7 @@
                     tellus ac
                     cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="contact-wrapper">
-                    <form action="https://echo.htmlacademy.ru" method="post" class='contact-form'>
+                    <form action="https://echo.htmlacademy.ru" method="post" class='contact-form' id='form'>
                         <input type="text" id="contact-name" name="contact-name" placeholder="Name (Required)" required>
                         <br>
 
@@ -239,7 +239,7 @@
                         <br>
 
 
-                        <input type="submit" value="Submit" class='button-submit'>
+                        <input type="submit" value="Submit" class='button-submit' id='button_submit'>
 
 
                     </form>
@@ -279,8 +279,16 @@
             </ul>
         </div>
     </footer>
+    <section class="message-block visually-hidden" id='message-block'>
+        <div class="message" id='message'>
+            <p>Письмо отправлено</p>
+            <p><span id='modal_subject'>Без темы</span></p>
+            <p><span id='modal_description'>Без описания</span></p>
+            <button id='button_close' class='button_close'>Close</button>
+        </div>
+    </section>
 </body>
 
-<script src="/script.js"></script>
+<script src="./script.js"></script>
 
 </html>

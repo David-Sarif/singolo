@@ -1,16 +1,28 @@
+
 const nav=document.getElementById('nav');
 const portfolioFilter=document.getElementById('portfolio-filter');
 const portfolioList=document.getElementById('portfolio-list');
+// for toggling phones
 const phoneVertical=document.getElementById('phone-vertical');
 const phoneHorizontal=document.getElementById('phone-horizontal');
 const BlackScreenVertical=document.getElementById('black-screen-vertical');
 const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
+// for slider
 const ArrowLeft=document.getElementById('arrow-left');
 const ArrowRight=document.getElementById('arrow-right');
 const Slide1=document.getElementById('slide-1');
 const Slide2=document.getElementById('slide-2');
 const SliderContainer=document.getElementById('slider-container');
 
+// for modal form
+const form=document.getElementById('form')
+const ButtonSubmit=document.getElementById('button_submit');
+const ButtonClose=document.getElementById('button_close')
+const MessageBlock=document.getElementById('message-block')
+
+
+const modalSubject = document.getElementById('modal_subject');
+const modalDescription=document.getElementById('modal_description');
 
 function ShowSlide2()
 {
@@ -104,3 +116,44 @@ ArrowRight.addEventListener('click', (event) =>  {
 }
 )
 
+// modal form
+
+form.addEventListener('submit', (event) =>  {
+    const subject=document.getElementById('contact-subject').value.toString().trim();
+    const description=document.getElementById('contact-text').value.toString().trim();
+    event.preventDefault();
+
+    if (subject==''){
+        modalSubject.innerText='Без темы ';
+    }
+    
+    else   { 
+        modalSubject.innerText='Тема: '+subject;
+    }
+    if (description==''){
+        modalDescription.innerText='Без описания ';
+    }
+    else    {
+                modalDescription.innerText='Описание: '+description;
+                
+    }
+    
+    MessageBlock.classList.remove('visually-hidden');
+
+   
+    
+
+}
+)
+ButtonClose.addEventListener('click', (event) =>  {
+
+    MessageBlock.classList.add('visually-hidden');
+    document.getElementById('modal_subject').innerText='Без темы';
+    document.getElementById('modal_description').innerText='Без описания';
+    document.getElementById('contact-text').value=''
+    document.getElementById('contact-subject').value=''
+    // document.getElementById('form').reset();
+    
+
+}
+)
