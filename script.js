@@ -2,6 +2,8 @@
 const nav=document.getElementById('nav');
 const portfolioFilter=document.getElementById('portfolio-filter');
 const portfolioList=document.getElementById('portfolio-list');
+// for portfolio shuffle
+let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
 const phoneVertical=document.getElementById('phone-vertical');
 const phoneHorizontal=document.getElementById('phone-horizontal');
@@ -23,6 +25,19 @@ const MessageBlock=document.getElementById('message-block')
 
 const modalSubject = document.getElementById('modal_subject');
 const modalDescription=document.getElementById('modal_description');
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+  }
+
+function shufflePictures(event){
+    portfolioFilter.querySelectorAll('a').forEach(elem => elem.classList.remove('filter-element-active'));
+    event.target.classList.add('filter-element-active');
+
+    shuffle(portfolioArray);
+
+    document.querySelector('#portfolio-list').append(...portfolioArray);
+}
 
 function ShowSlide2()
 {
@@ -49,18 +64,12 @@ nav.addEventListener('click', (event) =>  {
 }
 )
 
-portfolioFilter.addEventListener('click', (event) =>  {
-    portfolioFilter.querySelectorAll('a').forEach(elem => elem.classList.remove('filter-element-active'));
-    event.target.classList.add('filter-element-active');
-    portfolioFilter.classList.remove('filter-element-active');
-    if (portfolioList.classList.contains('portfolio-list-shuffle')){
-        portfolioList.classList.remove('portfolio-list-shuffle');
-    }
-    else {
-        portfolioList.classList.add('portfolio-list-shuffle');
-    }
-}
-)
+// shuffling portfolio images
+document.getElementById('portfolio__btn-all').addEventListener('click', shufflePictures)
+document.getElementById('portfolio__btn-web').addEventListener('click', shufflePictures)
+document.getElementById('portfolio__btn-graphic').addEventListener('click', shufflePictures)
+document.getElementById('portfolio__btn-artwork').addEventListener('click', shufflePictures)
+
 
 phoneVertical.addEventListener('click', (event) =>  {
     if (BlackScreenVertical.classList.contains('visually-hidden'))
