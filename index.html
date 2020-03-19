@@ -42,13 +42,21 @@
                             class='arrow arrow_left' alt="arrow-left" id='arrow-left'></button>
                 </div>
                 <div class="slider-img " id='slide-1'>
-                    <img src="./assets/img/Phone-Vertical.png" class='phone-vertical' id='phone-vertical'
-                        alt="phone-vertical">
-                    <img src="./assets/img/phone-horizontal.png" class='phone-horizontal' id='phone-horizontal'
-                        alt="phone-horizontal">
+                    <div class="phone-vertical-container">
+                        <img src="./assets/img/Phone-Vertical.png" class='phone-vertical' id='phone-vertical'
+                            alt="phone-vertical">
+                        <div class="phone-vertical-click-zone" id='phone-vertical-click-zone'></div>
+                        <div class="black-screen-vertical visually-hidden" id='black-screen-vertical'></div>
+                    </div>
+                    <div class="phone-horizontal-container">
+                        <img src="./assets/img/phone-horizontal.png" class='phone-horizontal' id='phone-horizontal'
+                            alt="phone-horizontal">
 
-                    <div class="black-screen-vertical visually-hidden" id='black-screen-vertical'></div>
-                    <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal'></div>
+                        <div class="phone-horizontal-click-zone" id='phone-horizontal-click-zone'></div>
+
+                        <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal'>
+                        </div>
+                    </div>
                 </div>
                 <div class="slider-img visually-hidden" id='slide-2'>
                     <img src="./assets/img/slide2.png" class='slide-2-img' alt="slide2">
@@ -127,10 +135,14 @@
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <ul class="portfolio-filter" id='portfolio-filter'>
-                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a' id='portfolio__btn-all'>All</a></li>
-                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a' id='portfolio__btn-web'>Web Design </a></li>
-                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a' id='portfolio__btn-graphic'>Graphic Design </a></li>
-                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a' id='portfolio__btn-artwork'>Artwork </a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-all'>All</a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-web'>Web Design </a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-graphic'>Graphic Design </a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-artwork'>Artwork </a></li>
                 </ul>
                 <ul class="portfolio-list" id='portfolio-list'>
                     <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-1.png"

@@ -775,23 +775,54 @@ nav li:first-child::before {
   margin-top: 27px;
   margin-left: 42px;
   }
+
+  .phone-horizontal-container{
+    position:relative;
+  }
+
+  .phone-vertical-container{
+    position:relative;
+  }
   
   .black-screen-vertical{
-    width: 192px;
-    height: 337px;
+    width: 189px;
+    height: 333px;
     position: absolute;
     background-color: black;
-    top: 62px;
-    left: 12px;
+    top: 64px;
+    left: 14px;
+
   }
 
   .black-screen-horizontal{
-    width: 337px;
-    height: 192px;
+    width: 333px;
+    height: 188px;
     position: absolute;
     background-color: black;
-    top: 133px;
-    left: 371px;
+    top: 135px;
+    left: 373px;
+  }
+  .phone-vertical-click-zone{
+    position: absolute;
+    width: 215px;
+    height: 457px;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+  }
+  .phone-horizontal-click-zone{
+    position: absolute;
+    width: 458px;
+    height: 215px;
+    z-index: 2;
+    top: 121px;
+    left: 313px;
+    border-radius: 25px;
+    cursor: pointer;
+
   }
 
 .slide-2-img{

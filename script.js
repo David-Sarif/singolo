@@ -5,8 +5,8 @@ const portfolioList=document.getElementById('portfolio-list');
 // for portfolio shuffle
 let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
-const phoneVertical=document.getElementById('phone-vertical');
-const phoneHorizontal=document.getElementById('phone-horizontal');
+const phoneVertical=document.getElementById('phone-vertical-click-zone');
+const phoneHorizontal=document.getElementById('phone-horizontal-click-zone');
 const BlackScreenVertical=document.getElementById('black-screen-vertical');
 const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
 // for slider
@@ -29,6 +29,13 @@ const modalDescription=document.getElementById('modal_description');
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
   }
+
+function toggleScreen(event){
+    let screen=event.target.nextElementSibling
+    if (screen.classList.contains('visually-hidden'))
+        screen.classList.remove('visually-hidden')
+    else screen.classList.add('visually-hidden')  
+}
 
 function shufflePictures(event){
     portfolioFilter.querySelectorAll('a').forEach(elem => elem.classList.remove('filter-element-active'));
@@ -71,40 +78,11 @@ document.getElementById('portfolio__btn-graphic').addEventListener('click', shuf
 document.getElementById('portfolio__btn-artwork').addEventListener('click', shufflePictures)
 
 
-phoneVertical.addEventListener('click', (event) =>  {
-    if (BlackScreenVertical.classList.contains('visually-hidden'))
-    {
-        BlackScreenVertical.classList.remove('visually-hidden')}
-    else
-        BlackScreenVertical.classList.add('visually-hidden')
-}
-)
-BlackScreenVertical.addEventListener('click', (event) =>  {
-    if (BlackScreenVertical.classList.contains('visually-hidden'))
-    {
-        BlackScreenVertical.classList.remove('visually-hidden')}
-    else
-        BlackScreenVertical.classList.add('visually-hidden')
-}
-)
-phoneHorizontal.addEventListener('click', (event) =>  {
-    if (BlackScreenHorizontal.classList.contains('visually-hidden'))
-    {
-        BlackScreenHorizontal.classList.remove('visually-hidden')}
-    else
-        BlackScreenHorizontal.classList.add('visually-hidden')
 
-}
-)
-BlackScreenHorizontal.addEventListener('click', (event) =>  {
-    if (BlackScreenHorizontal.classList.contains('visually-hidden'))
-    {
-        BlackScreenHorizontal.classList.remove('visually-hidden')}
-    else
-        BlackScreenHorizontal.classList.add('visually-hidden')
+phoneVertical.addEventListener('click', toggleScreen);
+phoneHorizontal.addEventListener('click', toggleScreen)
 
-}
-)
+
 
 ArrowLeft.addEventListener('click', (event) =>  {
     if (Slide2.classList.contains('visually-hidden'))
