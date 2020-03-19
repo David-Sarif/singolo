@@ -43,7 +43,8 @@ function shufflePictures(event){
 
     shuffle(portfolioArray);
 
-    document.querySelector('#portfolio-list').append(...portfolioArray);
+    // document.querySelector('#portfolio-list').append(...portfolioArray);
+    document.querySelector('#portfolio-list').innerHTML=(portfolioArray);
 }
 
 function ShowSlide2()
@@ -64,19 +65,35 @@ function ShowSlide1()
     SliderContainer.classList.remove('slider-container-blue');
 }
 
+document.addEventListener('scroll',onScroll);
 
-nav.addEventListener('click', (event) =>  {
-    nav.querySelectorAll('a').forEach(elem => elem.classList.remove('nav-active'));
-    event.target.classList.add('nav-active');
+function onScroll(event){
+    const curPos=window.scrollY;
+    const sections=document.querySelectorAll('section');
+    const links=nav.querySelectorAll('a');
+
+    sections.forEach((elem)=>{
+        if ((elem.offsetTop-95)<=curPos && (elem.offsetTop+elem.offsetHeight)> curPos){
+            links.forEach((a) => {
+                a.classList.remove('nav-active');
+                if (elem.getAttribute('class')===a.getAttribute('href').substring(1)){
+                    a.classList.add('nav-active')
+                }
+            })
+        }           
+    })
+    if (curPos<600){
+        nav.querySelectorAll('a')[0].classList.add('nav-active');
+    }
 }
-)
+
+
 
 // shuffling portfolio images
 document.getElementById('portfolio__btn-all').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-web').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-graphic').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-artwork').addEventListener('click', shufflePictures)
-
 
 
 phoneVertical.addEventListener('click', toggleScreen);
@@ -91,8 +108,6 @@ ArrowLeft.addEventListener('click', (event) =>  {
 
     else
         ShowSlide1()
-    
-
 }
 )
 ArrowRight.addEventListener('click', (event) =>  {
@@ -110,37 +125,26 @@ form.addEventListener('submit', (event) =>  {
     const description=document.getElementById('contact-text').value.toString().trim();
     event.preventDefault();
 
-    if (subject==''){
-        modalSubject.innerText='Без темы ';
-    }
-    
-    else   { 
+    if (subject=='')
+        modalSubject.innerText='Без темы ';  
+    else    
         modalSubject.innerText='Тема: '+subject;
-    }
-    if (description==''){
+    
+    if (description=='')
         modalDescription.innerText='Без описания ';
-    }
-    else    {
-                modalDescription.innerText='Описание: '+description;
-                
-    }
     
+    else   
+        modalDescription.innerText='Описание: '+description;           
     MessageBlock.classList.remove('visually-hidden');
-
-   
-    
 
 }
 )
 ButtonClose.addEventListener('click', (event) =>  {
-
     MessageBlock.classList.add('visually-hidden');
     document.getElementById('modal_subject').innerText='Без темы';
     document.getElementById('modal_description').innerText='Без описания';
     document.getElementById('contact-text').value=''
     document.getElementById('contact-subject').value=''
-    // document.getElementById('form').reset();
-    
-
+    document.getElementById('form').reset();
 }
 )
