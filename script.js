@@ -16,6 +16,66 @@ const Slide1=document.getElementById('slide-1');
 const Slide2=document.getElementById('slide-2');
 const SliderContainer=document.getElementById('slider-container');
 
+const slides = document.querySelectorAll('.slider-img');
+let currentSlide = 0;
+let isEnabled = true;
+
+function changeCurrentSlide(n){
+    currentSlide = (n+slides.length) % slides.length;
+}
+
+function hideSlide(direction){
+    isEnabled=false;
+    slides[currentSlide].classList.add(direction)
+    slides[currentSlide].addEventListener('animationend', function() {
+        this.classList.remove('active',direction);
+    })
+}
+
+
+
+
+function showSlide(direction){
+   
+    slides[currentSlide].classList.add('next', direction)
+    slides[currentSlide].addEventListener('animationend', function(){
+        this.classList.remove('next',direction);
+        this.classList.add('active');
+        isEnabled=true;
+    })
+}
+
+function previousSlide(n){
+    hideSlide('to-right');
+    changeCurrentSlide(n-1);
+    showSlide('from-left');
+
+}
+
+function nextSlide(n){
+    hideSlide('to-left');
+    changeCurrentSlide(n+1);
+    showSlide('from-right');
+
+}
+
+ArrowLeft.addEventListener('click',function(){
+
+    if (isEnabled){
+        previousSlide(currentSlide);
+    }
+}
+)
+
+ArrowRight.addEventListener('click',function(){
+
+    if (isEnabled){
+        nextSlide(currentSlide);
+    }
+}
+)
+
+
 // for modal form
 const form=document.getElementById('form')
 const ButtonSubmit=document.getElementById('button_submit');
@@ -43,27 +103,27 @@ function shufflePictures(event){
 
     shuffle(portfolioArray);
 
-    // document.querySelector('#portfolio-list').append(...portfolioArray);
-    document.querySelector('#portfolio-list').innerHTML=(portfolioArray);
+    document.querySelector('#portfolio-list').append(...portfolioArray);
+    // document.querySelector('#portfolio-list').innerHTML=(portfolioArray);
 }
 
-function ShowSlide2()
-{
+// function ShowSlide2()
+// {
 
-    Slide2.classList.remove('visually-hidden');
-    Slide1.classList.add('visually-hidden');
-    SliderContainer.classList.remove('slider-container-red');
-    SliderContainer.classList.add('slider-container-blue');
-}
+//     Slide2.classList.remove('visually-hidden');
+//     Slide1.classList.add('visually-hidden');
+//     SliderContainer.classList.remove('slider-container-red');
+//     SliderContainer.classList.add('slider-container-blue');
+// }
 
-function ShowSlide1()
-{
+// function ShowSlide1()
+// {
 
-    Slide1.classList.remove('visually-hidden');
-    Slide2.classList.add('visually-hidden');
-    SliderContainer.classList.add('slider-container-red');
-    SliderContainer.classList.remove('slider-container-blue');
-}
+//     Slide1.classList.remove('visually-hidden');
+//     Slide2.classList.add('visually-hidden');
+//     SliderContainer.classList.add('slider-container-red');
+//     SliderContainer.classList.remove('slider-container-blue');
+// }
 
 document.addEventListener('scroll',onScroll);
 
@@ -107,22 +167,22 @@ phoneHorizontal.addEventListener('click', toggleScreen)
 
 
 
-ArrowLeft.addEventListener('click', (event) =>  {
-    if (Slide2.classList.contains('visually-hidden'))
+// ArrowLeft.addEventListener('click', (event) =>  {
+//     if (Slide2.classList.contains('visually-hidden'))
     
-        ShowSlide2()
+//         ShowSlide2()
 
-    else
-        ShowSlide1()
-}
-)
-ArrowRight.addEventListener('click', (event) =>  {
-    if (Slide2.classList.contains('visually-hidden'))   
-        ShowSlide2()   
-    else
-        ShowSlide1()   
-}
-)
+//     else
+//         ShowSlide1()
+// }
+// )
+// ArrowRight.addEventListener('click', (event) =>  {
+//     if (Slide2.classList.contains('visually-hidden'))   
+//         ShowSlide2()   
+//     else
+//         ShowSlide1()   
+// }
+// )
 
 // modal form
 
