@@ -85,6 +85,12 @@ function onScroll(event){
     if (curPos<600){
         nav.querySelectorAll('a')[0].classList.add('nav-active');
     }
+    if (curPos>2573){
+        nav.querySelectorAll('a')[3].classList.remove('nav-active');
+        nav.querySelectorAll('a')[4].classList.add('nav-active');
+    }
+
+    
 }
 
 

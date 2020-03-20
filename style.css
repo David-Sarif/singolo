@@ -1,6 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", Arial, sans-serif;
   min-width: 1020px;
+  scroll-behavior: smooth;
 }
 
 /* singolo1 */
