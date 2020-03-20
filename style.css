@@ -131,6 +131,9 @@ nav li:first-child::before {
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
+  /* padding-top: 53px; */
+
+  
 }
 
 .slider-container-red{
@@ -147,17 +150,21 @@ nav li:first-child::before {
 }
 
 .slider-img {
+  display: none;
+  animation: 0.5s ease-in-out;
   margin-left: 10px;
   position: relative;
   width: 798px;
   height: 486px;
+  
+  
 }
 
 .slider-wrapper {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding-top: 53px;
+  /* padding-top: 53px; */
   width: 960px;
   margin: 0 auto;
 }
@@ -782,12 +789,19 @@ nav li:first-child::before {
 
   .phone-horizontal-container{
     position:relative;
+    top:53px;
   }
 
   .phone-vertical-container{
     position:relative;
+    top:53px;
   }
-  
+
+  .phones-container{
+    position:relative;
+    top:53px;
+  }
+
   .black-screen-vertical{
     width: 189px;
     height: 333px;
@@ -831,7 +845,7 @@ nav li:first-child::before {
 
 .slide-2-img{
   position: absolute;
-  top: calc(50% - 260px);
+
   left:calc(50% - 260px);
 }
 
@@ -858,4 +872,53 @@ nav li:first-child::before {
   border-radius: 10px;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
+}
+
+.slider-img{
+  
+}
+
+.active,
+.next{
+  display: block
+}
+.next{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.to-left{
+ animation-name:left;
+}
+.to-right{
+  animation-name:right;
+  animation-direction: reverse;
+}
+
+.from-left{
+  animation-name:left;
+  animation-direction: reverse;
+
+}
+.from-right{
+  animation-name:right;
+
+}
+@keyframes left{
+  from {
+    left:0;
+  }
+  to {
+    left:-100%;
+  }
+}
+
+@keyframes right{
+  from {
+    left:100%;
+  }
+  to {
+    left:0;
+  }
 }
