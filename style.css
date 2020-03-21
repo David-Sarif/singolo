@@ -149,7 +149,7 @@ nav li:first-child::before {
   display: none;
   animation: 0.5s ease-in-out;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 594px;
   
   
@@ -795,15 +795,17 @@ nav li:first-child::before {
     position:relative;
     /* top:53px; */
     left: calc(50% - 400px);
-    width: 1020px;
+    width: 300px;
+    /* right:384px; */
   }
 
   .phone-vertical-container{
     position:relative;
     /* top:53px; */
-    /* left:150px; */
-    left: calc(50% - 400px);
+    left:-249px;
+    /* left: calc(50% - 400px); */
     margin: 0 auto;
+    width: 300px;
   }
 
   .phones-container{
