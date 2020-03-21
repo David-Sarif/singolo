@@ -132,15 +132,6 @@ nav li:first-child::before {
   
 }
 
-.slider-container-red{
-  background-color: #f06c64;
-  border-bottom: #ea676b 6px solid;
-}
-.slider-container-blue{
-  background-color: #648BF0;
-  border-bottom: rgb(76, 121, 236) 6px solid;
-}
-
 .arrow{
   opacity: 0.3;
 }
@@ -170,9 +161,6 @@ nav li:first-child::before {
 
 .phone-horizontal{
   position: absolute;
-  top:121px;
-  left:313px;
-
 }
 .button-container-left {
   position: absolute;
@@ -180,8 +168,6 @@ nav li:first-child::before {
   left: calc(50% - 480px);
   display: flex;
   align-items: center;
-  
-
 }
 .button-container-right {
   position: absolute;
@@ -793,24 +779,23 @@ nav li:first-child::before {
 
   .phone-horizontal-container{
     position:relative;
-    /* top:53px; */
-    left: calc(50% - 400px);
+    top:122px;
     width: 300px;
-    /* right:384px; */
+    right:83px;
   }
 
   .phone-vertical-container{
     position:relative;
-    /* top:53px; */
-    left:-249px;
-    /* left: calc(50% - 400px); */
-    margin: 0 auto;
+    top:2px;
+    left:-96px;
     width: 300px;
   }
 
   .phones-container{
     position:relative;
     top:53px;
+    display: flex;
+    justify-content: center;
   }
 
   .black-screen-vertical{
@@ -828,8 +813,8 @@ nav li:first-child::before {
     height: 188px;
     position: absolute;
     background-color: black;
-    top: 135px;
-    left: 373px;
+    top: 14px;
+    left:60px;
   }
   .phone-vertical-click-zone{
     position: absolute;
@@ -847,8 +832,6 @@ nav li:first-child::before {
     width: 458px;
     height: 215px;
     z-index: 2;
-    top: 121px;
-    left: 313px;
     border-radius: 25px;
     cursor: pointer;
 
