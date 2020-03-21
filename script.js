@@ -59,7 +59,7 @@ function nextSlide(n){
 
 }
 
-ArrowLeft.addEventListener('click',function(){
+ArrowRight.addEventListener('click',function(){
 
     if (isEnabled){
         previousSlide(currentSlide);
@@ -67,7 +67,7 @@ ArrowLeft.addEventListener('click',function(){
 }
 )
 
-ArrowRight.addEventListener('click',function(){
+ArrowLeft.addEventListener('click',function(){
 
     if (isEnabled){
         nextSlide(currentSlide);
@@ -104,26 +104,9 @@ function shufflePictures(event){
     shuffle(portfolioArray);
 
     document.querySelector('#portfolio-list').append(...portfolioArray);
-    // document.querySelector('#portfolio-list').innerHTML=(portfolioArray);
 }
 
-// function ShowSlide2()
-// {
 
-//     Slide2.classList.remove('visually-hidden');
-//     Slide1.classList.add('visually-hidden');
-//     SliderContainer.classList.remove('slider-container-red');
-//     SliderContainer.classList.add('slider-container-blue');
-// }
-
-// function ShowSlide1()
-// {
-
-//     Slide1.classList.remove('visually-hidden');
-//     Slide2.classList.add('visually-hidden');
-//     SliderContainer.classList.add('slider-container-red');
-//     SliderContainer.classList.remove('slider-container-blue');
-// }
 
 document.addEventListener('scroll',onScroll);
 
@@ -153,8 +136,6 @@ function onScroll(event){
     
 }
 
-
-
 // shuffling portfolio images
 document.getElementById('portfolio__btn-all').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-web').addEventListener('click', shufflePictures)
@@ -166,23 +147,6 @@ phoneVertical.addEventListener('click', toggleScreen);
 phoneHorizontal.addEventListener('click', toggleScreen)
 
 
-
-// ArrowLeft.addEventListener('click', (event) =>  {
-//     if (Slide2.classList.contains('visually-hidden'))
-    
-//         ShowSlide2()
-
-//     else
-//         ShowSlide1()
-// }
-// )
-// ArrowRight.addEventListener('click', (event) =>  {
-//     if (Slide2.classList.contains('visually-hidden'))   
-//         ShowSlide2()   
-//     else
-//         ShowSlide1()   
-// }
-// )
 
 // modal form
 
