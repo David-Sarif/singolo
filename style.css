@@ -37,7 +37,6 @@ header {
   position:sticky;
   top:0;
   z-index:1;
-  /* margin: auto auto 50px auto; */
 }
 
 
@@ -46,9 +45,7 @@ header a {
   text-transform: uppercase;
 }
 
-/*  */
-/* header a:active */
-/* header a:focus, */
+
 header a:hover
  {
   color: #f06c64;
@@ -131,7 +128,6 @@ nav li:first-child::before {
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-  /* padding-top: 53px; */
 
   
 }
@@ -164,8 +160,6 @@ nav li:first-child::before {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  /* padding-top: 53px; */
-  /* width: 960px; */
   margin: 0 auto;
 }
 .phone-vertical{
@@ -182,8 +176,8 @@ nav li:first-child::before {
 }
 .button-container-left {
   position: absolute;
-  top: 50%;
-  left: 0px;
+  top: 47%;
+  left: calc(50% - 480px);
   display: flex;
   align-items: center;
   
@@ -193,8 +187,8 @@ nav li:first-child::before {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 50%;
-  left: 300px;
+  top: 47%;
+  right: calc(50% - 480px);
   
 
 }
@@ -414,9 +408,7 @@ nav li:first-child::before {
     border: 1px solid white;
     border-radius: 5px;
   }
-  /* .filter-element a:active{
-    opacity: 0.3;
-  } */
+
   .portfolio-list-shuffle{
     flex-direction: row-reverse;
   }
@@ -801,14 +793,17 @@ nav li:first-child::before {
 
   .phone-horizontal-container{
     position:relative;
-    top:53px;
-    left:200px;
+    /* top:53px; */
+    left: calc(50% - 400px);
+    width: 1020px;
   }
 
   .phone-vertical-container{
     position:relative;
-    top:53px;
-    left:100px
+    /* top:53px; */
+    /* left:150px; */
+    left: calc(50% - 400px);
+    margin: 0 auto;
   }
 
   .phones-container{
