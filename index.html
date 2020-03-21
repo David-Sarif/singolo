@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./style.css">
+
     <title>Singolo</title>
 </head>
 
 <body>
-
-    <header>
+    <header id='home'>
         <div class="wrapper header-wrapper">
             <a href="#" class="logo">
                 <h1>Singolo</h1>
@@ -21,35 +21,58 @@
 
 
             </a>
-            <nav>
+            <nav id='nav'>
                 <ul>
-                    <li><a href="#" class='nav-active'>Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class='nav-active'>Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#feedback">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
 
-        <section class="slider-container">
+        <section class="slider-container slider-container-red" id='slider-container'>
             <div class="wrapper slider-wrapper">
-                <div class="button-container">
-                    <button type='button' class="button button-left"><img src="./assets/img/chev.png" class='arrow-left'
-                            alt="arrow-left"></button>
+
+                <div class="slider-img slide-1 active" id='slide-1'>
+                    <div class="phones-container">
+                        <div class="phone-vertical-container">
+                            <img src="./assets/img/Phone-Vertical.png" class='phone-vertical' id='phone-vertical'
+                                alt="phone-vertical">
+                            <div class="phone-vertical-click-zone" id='phone-vertical-click-zone'></div>
+                            <div class="black-screen-vertical visually-hidden" id='black-screen-vertical'></div>
+                        </div>
+                        <div class="phone-horizontal-container">
+                            <img src="./assets/img/phone-horizontal.png" class='phone-horizontal' id='phone-horizontal'
+                                alt="phone-horizontal">
+
+                            <div class="phone-horizontal-click-zone" id='phone-horizontal-click-zone'></div>
+
+                            <div class="black-screen-horizontal visually-hidden" id='black-screen-horizontal'>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-img">
-                    <img src="./assets/img/iPhone-Vertical.png" alt="phones"></div>
-                <div class="button-container">
+                <div class="slider-img slide-2" id='slide-2'>
+                    <div class="phones-container">
+                        <img src="./assets/img/slide2.png" class='slide-2-img' alt="slide2"></div>
+                </div>
+                <div class="button-container-left">
+                    <button type='button' class="button button-left"><img src="./assets/img/chev.png"
+                            class='arrow arrow_left' alt="arrow-left" id='arrow-left'></button>
+                </div>
+                <div class="button-container-right">
                     <button type='button' class="button button-right"><img src="./assets/img/chev.png"
-                            class='arrow-left' alt="arrow-left"></button>
+                            class='arrow arrow_right' alt="arrow-right" id='arrow-right'></button>
                 </div>
 
             </div>
         </section>
-
+        <div class="services-anchor" id='services'></div>
         <section class="services">
             <div class="wrapper services-wrapper">
 
@@ -109,45 +132,51 @@
                 </ul>
             </div>
         </section>
+        <div class="portfolio-anchor" id='portfolio'></div>
         <section class="portfolio">
             <div class="portfolio-wrapper">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <ul class="portfolio-filter">
-                    <li class='filter-element filter-element-active'><a href="#">All</a></li>
-                    <li class='filter-element'><a href="#">Web Design </a></li>
-                    <li class='filter-element'><a href="#">Graphic Design </a></li>
-                    <li class='filter-element'><a href="#">Artwork </a></li>
+                <ul class="portfolio-filter" id='portfolio-filter'>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-all'>All</a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-web'>Web Design </a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-graphic'>Graphic Design </a></li>
+                    <li class='filter-element'><a href="#portfolio_" class='filter-element-a'
+                            id='portfolio__btn-artwork'>Artwork </a></li>
                 </ul>
-                <ul class="portfolio-list">
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-1.png"
-                                alt="portfolio-1"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-2.png"
-                                alt="portfolio-2"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-3.png"
-                                alt="portfolio-3"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-4.png"
-                                alt="portfolio-4"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-5.png"
-                                alt="portfolio-5"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-6.png"
-                                alt="portfolio-6"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-7.png"
-                                alt="portfolio-7"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-8.png"
-                                alt="portfolio-8"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-9.png"
-                                alt="portfolio-9"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-10.png"
-                                alt="portfolio-10"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-11.png"
-                                alt="portfolio-11"></a></li>
-                    <li class="portfolio-element"><a href="#"><img src="./assets/img/portfolio-12.png"
-                                alt="portfolio-12"></a></li>
+                <ul class="portfolio-list" id='portfolio-list'>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-1.png"
+                                alt="portfolio-1" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-2.png"
+                                alt="portfolio-2" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-3.png"
+                                alt="portfolio-3" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-4.png"
+                                alt="portfolio-4" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-5.png"
+                                alt="portfolio-5" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-6.png"
+                                alt="portfolio-6" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-7.png"
+                                alt="portfolio-7" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-8.png"
+                                alt="portfolio-8" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-9.png"
+                                alt="portfolio-9" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-10.png"
+                                alt="portfolio-10" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-11.png"
+                                alt="portfolio-11" class='portfolio-img' tabindex='0'></a></li>
+                    <li class="portfolio-element"><a href="#portfolio_"><img src="./assets/img/portfolio-12.png"
+                                alt="portfolio-12" class='portfolio-img' tabindex='0'></a></li>
                 </ul>
             </div>
         </section>
-        <section class="about-us">
+        <div class="about-us-anchor" id='about-us'></div>
+        <section class="about-us" id='about-us'>
             <div class="about-us-wrapper">
                 <h2 class='about-us-h'>About Us</h2>
                 <p class='about-us-text'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -200,7 +229,8 @@
 
 
         </section>
-        <section class="feedback">
+        <div class="feedback-anchor" id='feedback'></div>
+        <section class="feedback" id='contact'>
             <div class="feedback-wrapper">
                 <h2 class="feedback-heading">Get a Quote</h2>
                 <p class="feedback-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -209,7 +239,7 @@
                     tellus ac
                     cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="contact-wrapper">
-                    <form action="https://echo.htmlacademy.ru" method="post" class='contact-form'>
+                    <form action="https://echo.htmlacademy.ru" method="post" class='contact-form' id='form'>
                         <input type="text" id="contact-name" name="contact-name" placeholder="Name (Required)" required>
                         <br>
 
@@ -225,7 +255,7 @@
                         <br>
 
 
-                        <input type="submit" value="Submit" class='button-submit'>
+                        <input type="submit" value="Submit" class='button-submit' id='button_submit'>
 
 
                     </form>
@@ -265,7 +295,16 @@
             </ul>
         </div>
     </footer>
+    <section class="message-block visually-hidden" id='message-block'>
+        <div class="message" id='message'>
+            <p>Письмо отправлено</p>
+            <p><span id='modal_subject'>Без темы</span></p>
+            <p><span id='modal_description'>Без описания</span></p>
+            <button id='button_close' class='button_close'>Close</button>
+        </div>
+    </section>
 </body>
 
+<script src="./script.js"></script>
 
 </html>
