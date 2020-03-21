@@ -7,14 +7,14 @@ let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
 const phoneVertical=document.getElementById('phone-vertical-click-zone');
 const phoneHorizontal=document.getElementById('phone-horizontal-click-zone');
-const BlackScreenVertical=document.getElementById('black-screen-vertical');
-const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
+// const BlackScreenVertical=document.getElementById('black-screen-vertical');
+// const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
 // for slider
 const ArrowLeft=document.getElementById('arrow-left');
 const ArrowRight=document.getElementById('arrow-right');
-const Slide1=document.getElementById('slide-1');
-const Slide2=document.getElementById('slide-2');
-const SliderContainer=document.getElementById('slider-container');
+// const Slide1=document.getElementById('slide-1');
+// const Slide2=document.getElementById('slide-2');
+// const SliderContainer=document.getElementById('slider-container');
 
 const slides = document.querySelectorAll('.slider-img');
 let currentSlide = 0;
@@ -31,9 +31,6 @@ function hideSlide(direction){
         this.classList.remove('active',direction);
     })
 }
-
-
-
 
 function showSlide(direction){
    
@@ -81,8 +78,6 @@ const form=document.getElementById('form')
 const ButtonSubmit=document.getElementById('button_submit');
 const ButtonClose=document.getElementById('button_close')
 const MessageBlock=document.getElementById('message-block')
-
-
 const modalSubject = document.getElementById('modal_subject');
 const modalDescription=document.getElementById('modal_description');
 
@@ -105,8 +100,6 @@ function shufflePictures(event){
 
     document.querySelector('#portfolio-list').append(...portfolioArray);
 }
-
-
 
 document.addEventListener('scroll',onScroll);
 
@@ -141,8 +134,7 @@ document.getElementById('portfolio__btn-all').addEventListener('click', shuffleP
 document.getElementById('portfolio__btn-web').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-graphic').addEventListener('click', shufflePictures)
 document.getElementById('portfolio__btn-artwork').addEventListener('click', shufflePictures)
-
-
+// toggling phones
 phoneVertical.addEventListener('click', toggleScreen);
 phoneHorizontal.addEventListener('click', toggleScreen)
 
@@ -169,6 +161,7 @@ form.addEventListener('submit', (event) =>  {
 
 }
 )
+
 ButtonClose.addEventListener('click', (event) =>  {
     MessageBlock.classList.add('visually-hidden');
     document.getElementById('modal_subject').innerText='Без темы';
