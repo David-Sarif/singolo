@@ -406,20 +406,69 @@ nav li:first-child::before {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    height: 620px;
-    width: 941px;
+    /* height: 620px; */
+    /* width: 941px; */
     overflow: hidden;
     -moz-overflow:hidden;
     
   }
   
   .portfolio-element {
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
+    flex: 1 0 20%;
+    
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+  }
+.portfolio-element-1{
+  background-image: url(./assets/img/portfolio-1.png);
+}
+.portfolio-element-2{
+  background-image: url(./assets/img/portfolio-2.png);
+}
+.portfolio-element-3{
+  background-image: url(./assets/img/portfolio-3.png);
+}
+.portfolio-element-4{
+  background-image: url(./assets/img/portfolio-4.png);
+}
+.portfolio-element-5{
+  background-image: url(./assets/img/portfolio-5.png);
+}
+.portfolio-element-6{
+  background-image: url(./assets/img/portfolio-6.png);
+}
+.portfolio-element-7{
+  background-image: url(./assets/img/portfolio-7.png);
+}
+.portfolio-element-8{
+  background-image: url(./assets/img/portfolio-8.png);
+}
+.portfolio-element-9{
+  background-image: url(./assets/img/portfolio-9.png);
+}
+.portfolio-element-10{
+  background-image: url(./assets/img/portfolio-10.png);
+}
+.portfolio-element-11{
+  background-image: url(./assets/img/portfolio-11.png);
+}
+.portfolio-element-12{
+  background-image: url(./assets/img/portfolio-12.png);
+}
+
+  .portfolio-element::before{
+    content: '';
+    float: left;
+    padding-top: 100%;
+
   }
   .portfolio-img{
     box-sizing:border-box;
-    width: 220px;
-    height: 187px;
+    /* width: 220px;
+    height: 187px; */
   }
   .portfolio-element .portfolio-img:focus{
   border: #F06C64 solid 5px;
