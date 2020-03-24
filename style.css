@@ -121,7 +121,7 @@ nav li:first-child::before {
 
 .slider-container {
   position: relative;
-  height: 600px;
+  /* height: 600px; */
   box-sizing: border-box;
 
 
@@ -307,7 +307,6 @@ nav li:first-child::before {
 
 .portfolio {
     padding-top: 44px;
-  
     padding-bottom: 48px;
     display: flex;
     justify-content: center;
@@ -316,6 +315,7 @@ nav li:first-child::before {
     border-top: transparent 1px solid;
    margin-top: 0;
   }
+
   .portfolio-wrapper {
     width: 1020px;
     padding-left: 40px;
@@ -497,8 +497,6 @@ nav li:first-child::before {
     margin-right: -1px;
   }
   
-  
-  
   .people-name {
     font-size: 18px;
     line-height: 18px;
@@ -527,7 +525,6 @@ nav li:first-child::before {
     text-align: justify;
   
   }
-  
   
   /* ? Due to pixel perfect again */
   .people-name:nth-child(2),
@@ -922,4 +919,96 @@ nav li:first-child::before {
   to {
     left:0;
   }
+}
+
+
+@media only screen and (max-width:1019px){
+
+  body {
+    
+    min-width: 100vw
+  }
+
+  .wrapper{
+    width:calc(100vw - 80px);
+    min-width: 689px;
+    /* max-width: 768px; */
+    /* max-width: 689px; */
+  }
+  .logo{
+    padding-left: 0px;
+  }
+  nav{
+    padding-right: 2px;
+    margin-top: -3px;
+  }
+  .slider-img{
+    height: 446px;
+  }
+
+  .button-container-left {
+    left:4%;
+  }
+  .button-container-right{
+    right: 2%;
+  }
+
+  .phone-vertical{
+    height: 364px;
+    width: 181px;
+  }
+  .phone-vertical-container{
+  left: 0px;
+  top: -12px;
+  }
+
+  .phone-horizontal{
+    width: 364px;
+    height: 181px;
+  }
+  .phone-horizontal-container{
+  left: -65px;
+  top: 80px;
+
+  }
+  .services-wrapper{
+    width: 94.9vw;
+    height: 668px;
+  }
+  li.services-item{
+    width: 314px;
+  
+    margin-bottom: 11px;
+    
+
+  }
+  .services h2{
+    padding-left: 21px;
+    padding-top: 48px;
+  }
+  .services p{
+    padding-left: 22px;
+    width: 688px;
+    margin-bottom: 8px;
+  }
+  .services-list{
+    width:92.2vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-around;
+    margin-top: 0px;
+  }
+
+  .services-list p{
+    width: 220px;
+    padding-left: 80px;
+  }
+
+
+
+.services-list h3 {
+  padding-top: 3px;
+}
+
+
 }
