@@ -10,9 +10,9 @@ body {
 
 /* singolo1 */
 
-.wrapper {
+/* .wrapper {
   margin: 0 auto;
-}
+} */
 
 .header-wrapper {
   max-width: 1020px;
@@ -198,6 +198,7 @@ nav li:first-child::before {
 .services-wrapper {
   width: 1020px;
   height: 494px;
+  margin: 0 auto;
 }
 
 .services h2 {
@@ -554,7 +555,7 @@ nav li:first-child::before {
 
 .feedback-wrapper {
   width: 1020px;
-  margin-left: 80px;
+  margin-left: 40px;
   padding-top: 43px;
 }
 
@@ -581,7 +582,7 @@ nav li:first-child::before {
   display: flex;
   justify-content: space-between;
   margin-top: 44px;
-  margin-right: 80px;
+  margin-right: 30px;
 }
 
 .contacts-descr {
@@ -975,10 +976,9 @@ footer {
   }
   .portfolio-wrapper {
     padding-left: 0;
-  }
-  .portfolio-wrapper{
     letter-spacing: 0.5px;
   }
+
   .portfolio-filter{
     margin-bottom: 29px;
   }
@@ -1014,6 +1014,9 @@ footer {
     
     margin-right: -2px;
   }
+  .people-element:first-child{
+    margin-left: 1px;
+  }
   .us-people{
     min-width: 688px;
     width: 90.7vw;
@@ -1029,4 +1032,54 @@ footer {
     width: calc((86vw)/3);
     margin-top: 10px;
   }
+  .feedback{
+    height: 626px;
+  }
+
+  .feedback-wrapper {
+    margin-left: -1px;
+  }
+  .feedback-heading {
+    margin-top: 18px;
+    margin-left: 3px;
+  }
+
+  .contact-form input{
+    width: 56.2vw;
+    min-width: 427px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+  }
+  textarea{
+    width: 56.2vw;
+    min-width: 427px;
+    height: 151px;
+    margin-bottom: 14px;
+    padding-left: 10px;
+   
+  }
+  .contacts-descr {
+    width: 25vw;
+    min-width: 220px;
+    margin-top: 3px;
+    margin-bottom: 47px;
+  }
+  .feedback-descr{
+    width: 88vw;
+    margin-bottom: -18px;
+  }
+  input.button-submit{
+    min-width: 137px;
+    width: 137px;
+    height: 38px;
+    margin-bottom: 0;
+  }
+
+.footer-copyright{
+  margin-left: 0;
+  font-size: 13px;
+}
+.footer-social{
+  padding-right: 2px;
+}
 }
