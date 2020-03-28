@@ -1146,6 +1146,7 @@ footer {
     left: 0;
     height: 110vh;
     background-color: #2d303a;
+    display: none;
 
   }
   nav ul {

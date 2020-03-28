@@ -118,13 +118,28 @@ function onScroll(event){
             })
         }           
     })
-    if (curPos<600){
+    if (curPos<207 && window.innerWidth<768){
         nav.querySelectorAll('a')[0].classList.add('nav-active');
+        nav.querySelectorAll('a')[1].classList.remove('nav-active');
+
     }
-    if (curPos>2573){
-        nav.querySelectorAll('a')[3].classList.remove('nav-active');
-        nav.querySelectorAll('a')[4].classList.add('nav-active');
+    else if (curPos<600&& window.innerWidth<768){
+        nav.querySelectorAll('a')[1].classList.add('nav-active');
+        nav.querySelectorAll('a')[0].classList.remove('nav-active');
+
     }
+     else if (curPos<600 ){
+        nav.querySelectorAll('a')[0].classList.add('nav-active');
+        nav.querySelectorAll('a')[1].classList.remove('nav-active');
+        
+
+    }
+
+    
+    // if (curPos>2573){
+    //     nav.querySelectorAll('a')[3].classList.remove('nav-active');
+    //     nav.querySelectorAll('a')[4].classList.add('nav-active');
+    // }
 
     
 }
