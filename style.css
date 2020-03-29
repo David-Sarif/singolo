@@ -1482,11 +1482,18 @@ footer {
   }
 
   .contact-form .button-submit {
-    width: 98vw;
+    width: 85vw;
+    min-width: 312px;
   }
 
   .footer-social {
     padding: 0;
     margin: auto;
+  }
+  .button-container-right {
+    right: 1%;
+  }
+  .button-right{
+    margin-right: 0;
   }
 }
