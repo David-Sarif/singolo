@@ -2,19 +2,24 @@
 const nav=document.getElementById('nav');
 const portfolioFilter=document.getElementById('portfolio-filter');
 const portfolioList=document.getElementById('portfolio-list');
+
+const homeLink=document.getElementById('home_link');
+const servicesLink=document.getElementById('services_link');
+const portfolioLink=document.getElementById('portfolio_link');
+const aboutLink=document.getElementById('about_link');
+const contactLink=document.getElementById('contact_link');
+
+
 // for portfolio shuffle
 let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
 const phoneVertical=document.getElementById('phone-vertical-click-zone');
 const phoneHorizontal=document.getElementById('phone-horizontal-click-zone');
-// const BlackScreenVertical=document.getElementById('black-screen-vertical');
-// const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
 // for slider
 const ArrowLeft=document.getElementById('arrow-left');
 const ArrowRight=document.getElementById('arrow-right');
-// const Slide1=document.getElementById('slide-1');
-// const Slide2=document.getElementById('slide-2');
-// const SliderContainer=document.getElementById('slider-container');
+const burgerButton=document.getElementById('burger-button');
+const burgerBackground=document.getElementById('burger_background');
 
 const slides = document.querySelectorAll('.slider-img');
 let currentSlide = 0;
@@ -118,7 +123,7 @@ function onScroll(event){
             })
         }           
     })
-    if (curPos<207 && window.innerWidth<768){
+    if (curPos<197 && window.innerWidth<768){
         nav.querySelectorAll('a')[0].classList.add('nav-active');
         nav.querySelectorAll('a')[1].classList.remove('nav-active');
 
@@ -135,11 +140,6 @@ function onScroll(event){
 
     }
 
-    
-    // if (curPos>2573){
-    //     nav.querySelectorAll('a')[3].classList.remove('nav-active');
-    //     nav.querySelectorAll('a')[4].classList.add('nav-active');
-    // }
 
     
 }
@@ -186,3 +186,62 @@ ButtonClose.addEventListener('click', (event) =>  {
     document.getElementById('form').reset();
 }
 )
+
+
+// mobile side menu
+burgerButton.addEventListener('click', toggleBurger )
+function toggleBurger(){
+if (nav.style.display=='')
+{
+    nav.style.display='block';
+    burgerBackground.classList.remove('visually-hidden');
+    burgerButton.classList.add('rotate')
+}
+
+else if (nav.style.display=='block'){
+    nav.style.display=''
+    burgerBackground.classList.add('visually-hidden');
+    burgerButton.classList.remove('rotate')
+}
+}
+
+burgerBackground.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    toggleBurger()
+}
+)
+
+homeLink.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    nav.style.display='';   
+}
+)
+servicesLink.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    nav.style.display='';   
+}
+)
+portfolioLink.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    nav.style.display='';   
+}
+)
+aboutLink.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    nav.style.display='';   
+}
+)
+contactLink.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    nav.style.display='';  
+}
+)
+
+
+
+
+
+
+
+
+

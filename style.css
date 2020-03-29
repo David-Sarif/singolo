@@ -828,7 +828,17 @@ footer {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.3);
-  z-index: 2;
+  z-index: 1;
+}
+.burger_background{  
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* z-index: 1; */
+
 }
 
 .message {
@@ -1147,8 +1157,10 @@ footer {
     height: 110vh;
     background-color: #2d303a;
     display: none;
+    z-index: 5;
 
   }
+  
   nav ul {
     flex-wrap: wrap;
 
@@ -1157,6 +1169,8 @@ footer {
     left: 71px;
     
     flex-direction: column;
+    width: 135px;
+    z-index: 5;
     
   }
   nav li::before{
@@ -1183,6 +1197,10 @@ footer {
    top: 23px;
    left: 23px;
    cursor: pointer;
+   transition: transform 1s;
+ }
+ .rotate{
+  transform:rotate(90deg) ;
  }
  header a:hover{
    color: yellowgreen;
@@ -1240,6 +1258,7 @@ footer {
   .phone-vertical-click-zone {
     width: 80px;
     height: 168px;
+    z-index: 0;
   }
   .black-screen-vertical {
     width: 70px;
@@ -1442,6 +1461,9 @@ form{
 .footer-social{
   padding-right: 0;
 }
+
+
+
 }
 
 /* ultra small media */
@@ -1472,5 +1494,6 @@ li.services-item {
   padding: 0;
   margin: auto;
 }
+
 
 }
