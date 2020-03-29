@@ -9,7 +9,6 @@ const portfolioLink=document.getElementById('portfolio_link');
 const aboutLink=document.getElementById('about_link');
 const contactLink=document.getElementById('contact_link');
 
-
 // for portfolio shuffle
 let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
@@ -77,7 +76,6 @@ ArrowLeft.addEventListener('click',function(){
 }
 )
 
-
 // for modal form
 const form=document.getElementById('form')
 const ButtonSubmit=document.getElementById('button_submit');
@@ -136,12 +134,9 @@ function onScroll(event){
      else if (curPos<600 ){
         nav.querySelectorAll('a')[0].classList.add('nav-active');
         nav.querySelectorAll('a')[1].classList.remove('nav-active');
-        
 
     }
-
-
-    
+  
 }
 
 // shuffling portfolio images
@@ -152,7 +147,6 @@ document.getElementById('portfolio__btn-artwork').addEventListener('click', shuf
 // toggling phones
 phoneVertical.addEventListener('click', toggleScreen);
 phoneHorizontal.addEventListener('click', toggleScreen)
-
 
 
 // modal form
@@ -186,7 +180,6 @@ ButtonClose.addEventListener('click', (event) =>  {
     document.getElementById('form').reset();
 }
 )
-
 
 // mobile side menu
 burgerButton.addEventListener('click', toggleBurger )
