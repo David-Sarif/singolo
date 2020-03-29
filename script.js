@@ -2,19 +2,23 @@
 const nav=document.getElementById('nav');
 const portfolioFilter=document.getElementById('portfolio-filter');
 const portfolioList=document.getElementById('portfolio-list');
+
+const homeLink=document.getElementById('home_link');
+const servicesLink=document.getElementById('services_link');
+const portfolioLink=document.getElementById('portfolio_link');
+const aboutLink=document.getElementById('about_link');
+const contactLink=document.getElementById('contact_link');
+
 // for portfolio shuffle
 let portfolioArray = Array.from(document.querySelectorAll('#portfolio-list>li'))
 // for toggling phones
 const phoneVertical=document.getElementById('phone-vertical-click-zone');
 const phoneHorizontal=document.getElementById('phone-horizontal-click-zone');
-// const BlackScreenVertical=document.getElementById('black-screen-vertical');
-// const BlackScreenHorizontal=document.getElementById('black-screen-horizontal');
 // for slider
 const ArrowLeft=document.getElementById('arrow-left');
 const ArrowRight=document.getElementById('arrow-right');
-// const Slide1=document.getElementById('slide-1');
-// const Slide2=document.getElementById('slide-2');
-// const SliderContainer=document.getElementById('slider-container');
+const burgerButton=document.getElementById('burger-button');
+const burgerBackground=document.getElementById('burger_background');
 
 const slides = document.querySelectorAll('.slider-img');
 let currentSlide = 0;
@@ -72,7 +76,6 @@ ArrowLeft.addEventListener('click',function(){
 }
 )
 
-
 // for modal form
 const form=document.getElementById('form')
 const ButtonSubmit=document.getElementById('button_submit');
@@ -118,15 +121,22 @@ function onScroll(event){
             })
         }           
     })
-    if (curPos<600){
+    if (curPos<197 && window.innerWidth<768){
         nav.querySelectorAll('a')[0].classList.add('nav-active');
-    }
-    if (curPos>2573){
-        nav.querySelectorAll('a')[3].classList.remove('nav-active');
-        nav.querySelectorAll('a')[4].classList.add('nav-active');
-    }
+        nav.querySelectorAll('a')[1].classList.remove('nav-active');
 
-    
+    }
+    else if (curPos<600&& window.innerWidth<768){
+        nav.querySelectorAll('a')[1].classList.add('nav-active');
+        nav.querySelectorAll('a')[0].classList.remove('nav-active');
+
+    }
+     else if (curPos<600 ){
+        nav.querySelectorAll('a')[0].classList.add('nav-active');
+        nav.querySelectorAll('a')[1].classList.remove('nav-active');
+
+    }
+  
 }
 
 // shuffling portfolio images
@@ -137,7 +147,6 @@ document.getElementById('portfolio__btn-artwork').addEventListener('click', shuf
 // toggling phones
 phoneVertical.addEventListener('click', toggleScreen);
 phoneHorizontal.addEventListener('click', toggleScreen)
-
 
 
 // modal form
@@ -171,3 +180,61 @@ ButtonClose.addEventListener('click', (event) =>  {
     document.getElementById('form').reset();
 }
 )
+
+// mobile side menu
+burgerButton.addEventListener('click', toggleBurger )
+function toggleBurger(){
+if (nav.style.display=='')
+{
+    nav.style.display='block';
+    burgerBackground.classList.remove('visually-hidden');
+    burgerButton.classList.add('rotate')
+}
+
+else if (nav.style.display=='block'){
+    nav.style.display=''
+    burgerBackground.classList.add('visually-hidden');
+    burgerButton.classList.remove('rotate')
+}
+}
+
+burgerBackground.addEventListener('click', function() {
+    burgerBackground.classList.add('visually-hidden');
+    toggleBurger()
+}
+)
+
+homeLink.addEventListener('click', function() {
+    if (window.innerWidth<768)
+    toggleBurger()
+}
+)
+servicesLink.addEventListener('click', function() {
+    if (window.innerWidth<768)
+    toggleBurger()
+}
+)
+portfolioLink.addEventListener('click', function() {
+    if (window.innerWidth<768)
+    toggleBurger()
+}
+)
+aboutLink.addEventListener('click', function() {
+    if (window.innerWidth<768)
+    toggleBurger()
+}
+)
+contactLink.addEventListener('click', function() {
+    if (window.innerWidth<768)
+    toggleBurger()
+}
+)
+
+
+
+
+
+
+
+
+

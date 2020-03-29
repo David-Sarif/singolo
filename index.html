@@ -14,6 +14,7 @@
 <body>
     <header id='home'>
         <div class="wrapper header-wrapper">
+            <img src="./assets/img/Burger-menu-icon.svg" alt="burger-button" class='burger-button visually-hidden' id='burger-button'>
             <a href="#" class="logo">
                 <h1>Singolo</h1>
                 <span>*</span>
@@ -21,13 +22,13 @@
 
 
             </a>
-            <nav id='nav'>
+            <nav id='nav' tabindex='0'>
                 <ul>
-                    <li><a href="#home" class='nav-active'>Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about-us">About</a></li>
-                    <li><a href="#feedback">Contact</a></li>
+                    <li><a href="#home" class='nav-active' id='home_link'>Home</a></li>
+                    <li><a href="#services" id='services_link'>Services</a></li>
+                    <li><a href="#portfolio" id='portfolio_link'>Portfolio</a></li>
+                    <li><a href="#about-us" id='about_link'>About</a></li>
+                    <li><a href="#feedback" id='contact_link'>Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,8 +36,8 @@
 
     <main>
 
-        <section class="slider-container slider-container-red" id='slider-container'>
-            <div class="wrapper slider-wrapper">
+        <section class="slider-container" id='slider-container'>
+            <div class="slider-wrapper">
 
                 <div class="slider-img slide-1 active" id='slide-1'>
                     <div class="phones-container">
@@ -134,7 +135,7 @@
         </section>
         <div class="portfolio-anchor" id='portfolio'></div>
         <section class="portfolio">
-            <div class="portfolio-wrapper">
+            <div class="portfolio-wrapper wrapper">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <ul class="portfolio-filter" id='portfolio-filter'>
@@ -177,7 +178,7 @@
         </section>
         <div class="about-us-anchor" id='about-us'></div>
         <section class="about-us" id='about-us'>
-            <div class="about-us-wrapper">
+            <div class="about-us-wrapper wrapper">
                 <h2 class='about-us-h'>About Us</h2>
                 <p class='about-us-text'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                     mollis, non commodo luctus, nisi
@@ -231,14 +232,14 @@
         </section>
         <div class="feedback-anchor" id='feedback'></div>
         <section class="feedback" id='contact'>
-            <div class="feedback-wrapper">
+            <div class="feedback-wrapper wrapper">
                 <h2 class="feedback-heading">Get a Quote</h2>
                 <p class="feedback-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                     mollis,
                     non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
                     tellus ac
                     cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="contact-wrapper">
+                <div class="contact-wrapper wrapper">
                     <form action="https://echo.htmlacademy.ru" method="post" class='contact-form' id='form'>
                         <input type="text" id="contact-name" name="contact-name" placeholder="Name (Required)" required>
                         <br>
@@ -285,7 +286,7 @@
     </main>
     <footer>
 
-        <div class="footer-wrapper">
+        <div class="footer-wrapper wrapper">
             <p class="footer-copyright">&copy; Copyright 2013</p>
             <ul class="footer-social">
                 <li><a href="#"><img src="./assets/img/Facebook.png" alt="facebook-link"></a></li>
@@ -300,9 +301,10 @@
             <p>Письмо отправлено</p>
             <p><span id='modal_subject'>Без темы</span></p>
             <p><span id='modal_description'>Без описания</span></p>
-            <button id='button_close' class='button_close'>Close</button>
+            <button id='button_close' class='button_close'>OK</button>
         </div>
     </section>
+    <section class="burger_background visually-hidden" id="burger_background"></section>
 </body>
 
 <script src="./script.js"></script>
