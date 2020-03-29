@@ -1158,6 +1158,7 @@ footer {
     background-color: #2d303a;
     display: none;
     z-index: 5;
+    transition: width 2s;
 
   }
   

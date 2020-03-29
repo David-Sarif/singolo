@@ -212,28 +212,28 @@ burgerBackground.addEventListener('click', function() {
 )
 
 homeLink.addEventListener('click', function() {
-    burgerBackground.classList.add('visually-hidden');
-    nav.style.display='';   
+    if (window.innerWidth<768)
+    toggleBurger()
 }
 )
 servicesLink.addEventListener('click', function() {
-    burgerBackground.classList.add('visually-hidden');
-    nav.style.display='';   
+    if (window.innerWidth<768)
+    toggleBurger()
 }
 )
 portfolioLink.addEventListener('click', function() {
-    burgerBackground.classList.add('visually-hidden');
-    nav.style.display='';   
+    if (window.innerWidth<768)
+    toggleBurger()
 }
 )
 aboutLink.addEventListener('click', function() {
-    burgerBackground.classList.add('visually-hidden');
-    nav.style.display='';   
+    if (window.innerWidth<768)
+    toggleBurger()
 }
 )
 contactLink.addEventListener('click', function() {
-    burgerBackground.classList.add('visually-hidden');
-    nav.style.display='';  
+    if (window.innerWidth<768)
+    toggleBurger()
 }
 )
 
