@@ -212,7 +212,7 @@ nav li:first-child::before {
   font-weight: 900;
   text-transform: capitalize;
   letter-spacing: -0.2px;
-  width: 200px;
+  width: 250px;
 }
 
 .services p {
@@ -319,6 +319,7 @@ nav li:first-child::before {
   font-weight: 900;
   margin-top: 24px;
   margin-bottom: 25px;
+  width: 250px;
   /* margin: 24px 0; */
 }
 
@@ -444,6 +445,7 @@ nav li:first-child::before {
   font-weight: 900;
   padding-top: 43px;
   letter-spacing: -0.2px;
+  width: 250px;
 }
 
 .about-us-text {
@@ -567,6 +569,7 @@ nav li:first-child::before {
   line-height: 18px;
   color: #f0d8d9;
   font-weight: 900;
+  width: 250px;
 }
 .feedback-descr {
   width: 939px;
