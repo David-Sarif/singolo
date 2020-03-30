@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Lato", Arial, sans-serif;
-  min-width: 1020px;
+  /* min-width: 1020px; */
   scroll-behavior: smooth;
 }
 
@@ -133,6 +133,7 @@ nav li:first-child::before {
   display: none;
   animation: 0.5s ease-in-out;
   position: relative;
+  min-width: calc(100vw - 15px);
   width: 100vw;
   height: 594px;
 }
@@ -196,7 +197,7 @@ nav li:first-child::before {
 }
 
 .services-wrapper {
-  width: 1020px;
+  max-width: 1020px;
   height: 494px;
   margin: 0 auto;
 }
@@ -211,6 +212,7 @@ nav li:first-child::before {
   font-weight: 900;
   text-transform: capitalize;
   letter-spacing: -0.2px;
+  width: 200px;
 }
 
 .services p {
@@ -234,6 +236,7 @@ nav li:first-child::before {
   padding-left: 40px;
   padding-right: 30px;
   padding-bottom: 41px;
+  box-sizing: border-box;
 }
 /* ? template is not so symmetrical, so I have to change elements width a bit */
 .services-item {
@@ -896,7 +899,7 @@ footer {
 
 @media only screen and (max-width: 1019px) {
   body {
-    min-width: 100vw;
+    min-width: calc(100vw - 17px);
   }
 
   .wrapper {
