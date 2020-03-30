@@ -580,7 +580,7 @@ nav li:first-child::before {
   overflow: hidden;
   -moz-overflow: hidden;
   margin-top: 27px;
-  letter-spacing: 0px;
+  letter-spacing: -0.4px;
   text-align: justify;
 }
 
